@@ -15,7 +15,7 @@ Un groupe de plus de quatre personnes n'est pas autorisé sans accord explicite 
 
 ## Soutenance collégiale
 
-La soutenance a lieu en fin de module, à une date annoncée sur la page Moodle du cours. Les pairs et l'enseignant évaluent chaque projet sur les mêmes quatre critères, chacun noté de 0 à 10.
+La soutenance a lieu à la **dernière séance programmée du groupe**. Les pairs et l'enseignant évaluent chaque projet sur les mêmes quatre critères, chacun noté de 0 à 10.
 
 | Critère | Ce qui est évalué |
 |---|---|
@@ -59,4 +59,4 @@ La difficulté affichée dans le catalogue indique l'ampleur technique du sujet,
 
 ## Remise
 
-La Pull Request finale doit être ouverte au plus tard à la date annoncée sur la page Moodle du cours, quelques jours avant la soutenance. Le contenu évalué est celui de la PR à cette échéance. Les corrections ultérieures doivent être clairement identifiées.
+La Pull Request finale doit être ouverte au plus tard **deux jours avant la soutenance** — soit deux jours avant la dernière séance programmée du groupe. Ce délai est nécessaire à la lecture du code et aux tests. Le contenu évalué est celui de la PR à cette échéance ; les corrections ultérieures doivent être clairement identifiées.

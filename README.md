@@ -18,12 +18,12 @@ La promotion apprentissage est répartie en deux groupes de TD — **TD AP3A** e
 | 8 | ven. 29 janv. 2027, 08:00–12:15 — P911 C | mer. 27 janv. 2027, 08:00–12:15 — P913 C |
 | 9 à 11 | à programmer | à programmer |
 
-| Étape | Date |
+| Étape | Échéance |
 |---|---|
-| Dépôt de la Pull Request finale | à confirmer (quelques jours avant la soutenance) |
-| Soutenance et démonstration | à confirmer (fin du cursus, trimestre d'automne) |
+| Dépôt de la Pull Request finale | au plus tard **deux jours avant la soutenance** |
+| Soutenance et démonstration | à la **dernière séance programmée du groupe** |
 
-> Les dates de séances ci-dessus proviennent du calendrier EPF de l'enseignant ; un écart éventuel est signalé en séance. Les échéances de remise et de soutenance seront annoncées dès confirmation.
+> Les dates de séances ci-dessus proviennent du calendrier EPF de l'enseignant ; un écart éventuel est signalé en séance. Les séances 9 à 11 seront programmées en fin de trimestre : pour chaque groupe, la soutenance a lieu à la dernière d'entre elles, et la Pull Request finale est attendue deux jours plus tôt.
 
 Le projet est réalisé progressivement et doit rester démontrable tout au long du module.
 
@@ -88,6 +88,8 @@ Les données volumineuses, poids de modèles, environnements virtuels, fichiers 
 ## Ressources du cours
 
 Les fiches renvoient aux notebooks du dépôt public [CoursIA](https://github.com/jsboige/CoursIA/tree/main/MyIA.AI.Notebooks/GenAI). Ils servent de points de départ : un projet attendu ne se limite pas à recopier un notebook, mais construit un démonstrateur, mesure ses résultats et documente ses choix.
+
+Les accès aux services du module — assistant conversationnel en ligne, clé d'API OpenRouter, base vectorielle, transcription audio — sont regroupés dans le **document de référence du cours**, distribué en séance et publié sur la page Moodle dès sa création. Ils ne figurent pas dans ce dépôt. Les clés restent réservées au cours et ne se diffusent pas en dehors.
 
 ## Licence
 

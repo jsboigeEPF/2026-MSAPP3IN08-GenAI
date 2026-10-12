@@ -74,7 +74,7 @@ La PR publique identifie les membres uniquement par leurs comptes GitHub (`@pseu
 
 La PR est obligatoire : un lien vers un dépôt externe, un fichier envoyé séparément ou un push direct ne constitue pas une remise.
 
-**Date limite : elle sera annoncée sur la page Moodle du cours et confirmée en séance.**
+**Date limite : au plus tard deux jours avant la soutenance**, laquelle a lieu à la dernière séance programmée du groupe. Ce délai laisse le temps de lire le code et de le tester ; une PR ouverte plus tard ne peut plus être évaluée dans de bonnes conditions.
 
 ## 7. Préparer la soutenance
 
