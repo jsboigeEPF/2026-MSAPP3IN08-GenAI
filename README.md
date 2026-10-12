@@ -4,15 +4,28 @@ Dépôt de projets du cours **MSAPP3IN08 — IA générative et chatbots**, fili
 
 ## Calendrier
 
+La promotion apprentissage est répartie en deux groupes de TD — **TD AP3A** et **TD AP3B** — qui suivent le même programme. Le cours comporte **onze séances par groupe**, en alternance de cours magistraux et de séances de TPs préparés et présentés par les élèves, sous forme d'exercices résolus dans [CoursIA](https://github.com/jsboige/CoursIA/tree/main/MyIA.AI.Notebooks/GenAI) et soumis par Pull Request avant leur présentation.
+
+| Séance | TD AP3A | TD AP3B |
+|---:|---|---|
+| 1 | lun. 12 oct. 2026, 15:45–17:45 — P916 C | lun. 12 oct. 2026, 13:30–15:30 — P916 C |
+| 2 | ven. 16 oct. 2026, 08:00–10:00 — P916 C | ven. 16 oct. 2026, 10:15–12:15 — P916 C |
+| 3 | lun. 26 oct. 2026, 15:45–17:45 — P911 C | lun. 26 oct. 2026, 13:30–15:30 — P911 C |
+| 4 | jeu. 29 oct. 2026, 08:00–12:15 — P911 C | ven. 30 oct. 2026, 08:00–12:15 — P912 C |
+| 5 | ven. 27 nov. 2026, 08:00–10:00 — P916 C | ven. 27 nov. 2026, 10:15–12:15 — P916 C |
+| 6 | ven. 11 déc. 2026, 08:00–12:15 — P913 C | jeu. 10 déc. 2026, 08:00–12:15 — GA102 C |
+| 7 | mar. 26 janv. 2027, 10:15–12:15 — P911 C | mar. 26 janv. 2027, 08:00–10:00 — P912 C |
+| 8 | ven. 29 janv. 2027, 08:00–12:15 — P911 C | mer. 27 janv. 2027, 08:00–12:15 — P913 C |
+| 9 à 11 | à programmer | à programmer |
+
 | Étape | Date |
 |---|---|
-| Séances | À confirmer par la scolarité (filière apprentissage, trimestre automne 2026) |
-| Dépôt de la Pull Request finale | À confirmer |
-| Soutenance et démonstration | À confirmer |
+| Dépôt de la Pull Request finale | à confirmer (quelques jours avant la soutenance) |
+| Soutenance et démonstration | à confirmer (fin du cursus, trimestre d'automne) |
 
-> Les dates précises seront annoncées sur la page Moodle du cours dès leur confirmation ; cette section sera mise à jour en conséquence.
+> Les dates de séances ci-dessus proviennent du calendrier EPF de l'enseignant ; un écart éventuel est signalé en séance. Les échéances de remise et de soutenance seront annoncées dès confirmation.
 
-Le cours comporte six séances. Le projet est réalisé progressivement et doit rester démontrable tout au long du module.
+Le projet est réalisé progressivement et doit rester démontrable tout au long du module.
 
 ## Démarrage rapide
 
