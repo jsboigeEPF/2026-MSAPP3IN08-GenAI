@@ -51,6 +51,7 @@ Les sujets libres sont possibles, mais doivent être proposés avec le [formulai
 - [Guide de réalisation et de soumission](docs/GUIDE-SOUMISSION.md)
 - [Modalités d'évaluation](docs/EVALUATION.md)
 - [TPs dans CoursIA et bonus](docs/TPS-ET-BONUS.md)
+- [Tutoriel GitHub pour les TPs](https://github.com/jsboige/CoursIA/blob/main/docs/TUTORIEL-GITHUB-TP.md) — pas à pas pour les groupes qui découvrent GitHub (page du dépôt CoursIA, où se font les TPs)
 - [Sujets réalisés lors des promotions précédentes](docs/HISTORIQUE-SUJETS.md)
 - [Gabarit de dossier de groupe](template-groupe/README.md)
 

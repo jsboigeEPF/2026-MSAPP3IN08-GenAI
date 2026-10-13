@@ -24,6 +24,8 @@ CoursIA distingue :
 
 Modifier un exemple déjà résolu, recopier une solution existante ou seulement retirer un marqueur `TODO` ne constitue pas une correction. Si deux groupes proposent le même exercice, seule une contribution originale et attribuable peut être comptée.
 
+Première fois sur GitHub, ou première Pull Request à ouvrir ? Suivez le [tutoriel pas à pas du dépôt CoursIA](https://github.com/jsboige/CoursIA/blob/main/docs/TUTORIEL-GITHUB-TP.md) : il reprend le parcours complet (compte, fork, branche, notebook, dépôt, PR, review) clic par clic. Pour toute autre difficulté, la [demande d'accompagnement](https://github.com/jsboigeEPF/2026-MSAPP3IN08-GenAI/issues/new?template=demande-accompagnement.yml) reste le canal du cours.
+
 ## Déroulement d'un TP
 
 1. Consultez la liste de notebooks annoncée pour le TP en classe.
