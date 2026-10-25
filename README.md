@@ -30,7 +30,7 @@ Le projet est réalisé progressivement et doit rester démontrable tout au long
 ## Démarrage rapide
 
 1. Constituez un groupe — **3 personnes est le format standard**.
-2. Choisissez un sujet dans le [catalogue 2026](docs/CATALOGUE.md), puis [réservez-le par une issue](https://github.com/jsboigeEPF/2026-MSAPP3IN08-GenAI/issues/new?template=inscription-groupe.yml). Un sujet ne peut être réservé que par un groupe.
+2. Choisissez un sujet dans le [catalogue 2026](docs/CATALOGUE.md), puis inscrivez le groupe et ses vœux dans le **classeur d'inscription** du cours (lien transmis par l'enseignant). Un sujet n'est attribué qu'à un groupe ; le classeur fait foi.
 3. Forkez ce dépôt sur le compte d'un membre du groupe.
 4. Créez un dossier unique à la racine, nommé `groupe-<nom-court>`.
 5. Copiez le contenu de [`template-groupe/`](template-groupe/) dans ce dossier.
