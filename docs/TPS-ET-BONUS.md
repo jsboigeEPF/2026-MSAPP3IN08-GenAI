@@ -29,7 +29,7 @@ Première fois sur GitHub, ou première Pull Request à ouvrir ? Suivez le [tuto
 ## Déroulement d'un TP
 
 1. Consultez la liste de notebooks annoncée pour le TP en classe.
-2. Vérifiez qu'aucune PR ouverte ne corrige déjà les mêmes exercices.
+2. Réservez chaque exercice dans l'onglet « Réservations TP » du classeur d'inscription (lien transmis par l'enseignant) : la règle est **premier arrivé, premier servi**, et la liste ne propose que les exercices encore libres. Vérifiez aussi qu'aucune PR ouverte ne corrige déjà les mêmes exercices.
 3. Forkez `jsboige/CoursIA`, créez une branche dédiée et ne modifiez que le notebook choisi et, si nécessaire, ses tests ou ressources directement associées.
 4. Pour chaque exercice choisi :
    - conservez l'énoncé et l'intention pédagogique ;

@@ -2,7 +2,7 @@
 
 ## 1. Réserver un sujet
 
-Choisissez un sujet du [catalogue](CATALOGUE.md) ou soumettez une proposition libre avant de commencer, puis inscrivez le groupe et ses vœux dans le classeur d'inscription du cours (lien transmis par l'enseignant) : c'est lui qui fait foi pour l'attribution. Deux groupes ne peuvent pas traiter le même sujet. Une proposition libre doit respecter les mêmes exigences de faisabilité, de mesure et de différenciation que le catalogue.
+Choisissez un sujet du [catalogue](CATALOGUE.md) ou soumettez une proposition libre avant de commencer, puis inscrivez le groupe dans le classeur d'inscription du cours (lien transmis par l'enseignant), onglet « Groupes », en choisissant le sujet dans la liste déroulante de la colonne « Sujet ». L'attribution suit la règle **premier arrivé, premier servi** : la liste ne propose que les sujets encore libres, et le classeur fait foi. Deux groupes ne peuvent pas traiter le même sujet ; pour en changer, choisissez-en un autre encore libre. Une proposition libre doit respecter les mêmes exigences de faisabilité, de mesure et de différenciation que le catalogue.
 
 ## 2. Préparer le fork
 
