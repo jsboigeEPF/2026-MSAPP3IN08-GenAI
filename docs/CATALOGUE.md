@@ -1,8 +1,8 @@
 # Catalogue des sujets 2026
 
-Ce catalogue est l'offre officielle **2026-2027** du module : **54 sujets actifs** répartis en douze axes. Un sujet attribué à un groupe dans le classeur d'inscription du cours devient indisponible aux autres groupes ; un sujet libre y entre par le formulaire de proposition ou par une Pull Request qui ajoute sa fiche à ce catalogue, au même format, puis validation de l'enseignant. Chaque sujet définit un MVP réalisable en six semaines, un protocole d'évaluation et un plan de repli. Les notebooks liés sont des ressources de démarrage : le livrable doit aller au-delà de leur reproduction.
+Ce catalogue est l'offre officielle **2026-2027** du module : **52 sujets actifs** répartis en douze axes. Un sujet attribué à un groupe dans le classeur d'inscription du cours devient indisponible aux autres groupes ; un sujet libre y entre par le formulaire de proposition ou par une Pull Request qui ajoute sa fiche à ce catalogue, au même format, puis validation de l'enseignant. Chaque sujet définit un MVP réalisable en six semaines, un protocole d'évaluation et un plan de repli. Les notebooks liés sont des ressources de démarrage : le livrable doit aller au-delà de leur reproduction.
 
-La numérotation des fiches est héritée du catalogue commun des modules GenAI EPF : les identifiants absents correspondent à des sujets réservés cette année par des groupes d'une autre filière. Les fiches A6–A7, B6–B7, C5–C6, D5–D6, E5 et F5 sont des ajouts 2026 propres à ce module. Les fiches E4-b, H1-b, K2-b à K2-d et L2-b sont des variantes : elles gardent le thème de la fiche d'origine mais en changent le verrou technique et la mesure, afin que plusieurs groupes attirés par un même thème aient chacun un sujet distinct.
+La numérotation des fiches est héritée du catalogue commun des modules GenAI EPF : les identifiants absents correspondent à des sujets réservés cette année par des groupes d'une autre filière. Les fiches A6–A7, B6–B7, C5–C6, D5–D6, E5 et F5 sont des ajouts 2026 propres à ce module. Les fiches E4-b, H1-b, K2-b à K2-d et L2-b sont des variantes : elles gardent le thème de la fiche d'origine mais en changent le verrou technique et la mesure, afin que plusieurs groupes attirés par un même thème aient chacun un sujet distinct. Le 27/10, les fiches B5 et H1 ont été retirées parce que des groupes de l'autre filière les développent : un sujet n'est jamais proposé dans les deux catalogues. La variante H1-b reste proposée.
 
 Consultez également les [sujets historiques exclus](HISTORIQUE-SUJETS.md), le [guide de soumission](GUIDE-SOUMISSION.md) et les [modalités d'évaluation](EVALUATION.md).
 
@@ -11,13 +11,13 @@ Consultez également les [sujets historiques exclus](HISTORIQUE-SUJETS.md), le [
 | Catégorie | Sujets |
 |---|---|
 | A — Texte structuré, RAG et mémoire | [A2](#a2--mémoire-persistante-multi-sessions) · [A4](#a4--mémoire-multimodale-évaluable) · [A5](#a5--long-contexte-contre-rag-sous-ablation) · [A6](#a6--réécriture-contrôlée-par-attributs) · [A7](#a7--cohérence-interne-des-documents-longs) |
-| B — Agents, orchestration et MCP | [B3](#b3--orchestrateur-agentique-sous-budget) · [B4](#b4--générateur-auto-validant-de-notebooks) · [B5](#b5--workflow-agentique-résilient-et-idempotent) · [B6](#b6--délibération-multi-agents-évaluée) · [B7](#b7--négociation-multi-agents-mesurée) |
+| B — Agents, orchestration et MCP | [B3](#b3--orchestrateur-agentique-sous-budget) · [B4](#b4--générateur-auto-validant-de-notebooks) · [B6](#b6--délibération-multi-agents-évaluée) · [B7](#b7--négociation-multi-agents-mesurée) |
 | C — Images | [C1](#c1--benchmark-dévaluation-dédition-dimages) · [C4](#c4--cohérence-dune-série-visuelle) · [C5](#c5--restauration-dimages-sans-invention) · [C6](#c6--images-synthétiques-pour-lentraînement) |
 | D — Audio et voix | [D3](#d3--séparation-et-restauration-de-sources-audio) · [D4](#d4--synthèse-vocale-expressive-et-prosodie) · [D5](#d5--diarisation-et-transcription-de-réunion) · [D6](#d6--podcast-sourcé-de-bout-en-bout) |
 | E — Vidéo | [E2](#e2--benchmark-de-compréhension-temporelle-vidéo) · [E3](#e3--pipeline-audiovisuel-synchronisé) · [E4](#e4--restauration-et-upscaling-vidéo) · [E4-b](#e4-b--interpolation-dimages-et-ralenti) · [E5](#e5--montage-automatique-mesuré) |
 | F — Plateformes et production | [F2](#f2--rag-wordpress-isolé-et-mesuré) · [F3](#f3--application-genai-observable-avec-net-aspire) · [F4](#f4--routeur-multi-fournisseurs-avec-failover) · [F5](#f5--assistant-support-avec-escalade-mesurée) |
 | G — Ingénierie assistée | [G1](#g1--banc-dessai-dagents-de-codage) · [G2](#g2--garde-fous-roslyn-pour-code-généré) · [G3](#g3--pair-programming-ia-en-étude-contrôlée) · [G4](#g4--migration-de-code-par-tests-différentiels) |
-| H — Évaluation, sécurité et fiabilité | [H1](#h1--laboratoire-red-team-dinjection-de-prompt) · [H1-b](#h1-b--empoisonnement-doutils-mcp) · [H2](#h2--harness-dévaluation-dagents) · [H3](#h3--observatoire-du-reward-hacking) · [H4](#h4--provenance-et-détection-de-contenus-synthétiques) · [H5](#h5--constitution-ia-et-coût-des-refus) |
+| H — Évaluation, sécurité et fiabilité | [H1-b](#h1-b--empoisonnement-doutils-mcp) · [H2](#h2--harness-dévaluation-dagents) · [H3](#h3--observatoire-du-reward-hacking) · [H4](#h4--provenance-et-détection-de-contenus-synthétiques) · [H5](#h5--constitution-ia-et-coût-des-refus) |
 | I — Adaptation et inférence | [I1](#i1--qlora-sans-contamination-de-lévaluation) · [I2](#i2--inférence-locale-net-face-aux-api-cloud) · [I3](#i3--frontière-coût-précision-du-test-time-compute) · [I4](#i4--fusion-et-routage-de-modèles-spécialisés) |
 | J — Données, science et décision | [J1](#j1--assistant-de-preuves-scientifiques) · [J2](#j2--analyste-multimodal-de-données) · [J3](#j3--expériences-reproductibles-auto-validées) |
 | K — IA responsable, gouvernance et sobriété | [K1](#k1--confidentialité-des-données-synthétiques) · [K2](#k2--traçabilité-et-licences-des-générations) · [K2-b](#k2-b--licences-du-code-généré) · [K2-c](#k2-c--fiches-modèle-vérifiées-contre-les-artefacts) · [K2-d](#k2-d--contrôles-ai-act-exécutables) · [K3](#k3--sobriété--coût-énergie-et-tokens) |
@@ -143,21 +143,6 @@ Générer un notebook pédagogique à partir d'un cahier des charges, l'exécute
 **CoursIA** : [NotebookMaker](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/SemanticKernel/10-SemanticKernel-NotebookMaker.ipynb) · [NotebookMaker batch paramétré](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/SemanticKernel/10b-SemanticKernel-NotebookMaker-batch-parameterized.ipynb) · [Code Interpreter](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/07_Code_Interpreter.ipynb)
 
 **Références** : [Jupyter nbclient](https://nbclient.readthedocs.io/) · [nbformat](https://nbformat.readthedocs.io/) · [OWASP — Insecure Output Handling](https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/)
-
-### B5 — Workflow agentique résilient et idempotent
-
-**Difficulté : 4/5** · Mots-clés : `resilience`, `idempotency`, `recovery`, `agents`
-
-Construire un workflow outillé qui supporte doublons, interruption et reprise sans répéter ses effets. Le verrou technique est la sémantique d'exécution fiable, non le nombre d'agents.
-
-- **MVP** : cinq étapes persistées, clés d'idempotence, reprise après crash et compensation d'une action réversible.
-- **Réussite** : campagne d'au moins 40 pannes injectées mesurant complétion, effets dupliqués et temps de reprise.
-- **Extensions** : files persistantes, concurrence, stratégie saga.
-- **Faisabilité** : outils simulés et base locale suffisants ; aucun GPU. Plan B : replay déterministe d'événements.
-
-**CoursIA** : [Process Framework](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/SemanticKernel/06-SemanticKernel-ProcessFramework.ipynb) · [Production Patterns](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/09_Production_Patterns.ipynb)
-
-**Références** : [Microsoft — Idempotency](https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction) · [AWS Builders' Library — Idempotent APIs](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/) · [OpenTelemetry](https://opentelemetry.io/docs/)
 
 ### B6 — Délibération multi-agents évaluée
 
@@ -528,26 +513,11 @@ Migrer une petite bibliothèque entre langages ou frameworks avec un assistant, 
 
 ## H — Évaluation, sécurité et fiabilité
 
-### H1 — Laboratoire red-team d'injection de prompt
-
-**Difficulté : 3/5** · Mots-clés : `prompt-injection`, `red-team`, `tool-use`, `mitigation`
-
-Construire une batterie reproductible d'attaques directes et indirectes contre un agent RAG/outillé, puis comparer plusieurs défenses. Ce sujet traite de sécurité, pas d'équité ou de biais.
-
-- **MVP** : 50 attaques classées, cible instrumentée, deux défenses et rapport automatique.
-- **Réussite** : Attack Success Rate avant/après, coût en faux refus, analyse par classe d'attaque.
-- **Extensions** : contenu multimodal, canary tokens, fuzzing.
-- **Faisabilité** : API texte, outils simulés sans effet réel ; budget cible inférieur à 12 €. Plan B : modèle local.
-
-**CoursIA** : [Prompt Security Red Team](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/09b_Prompt_Security_RedTeam.ipynb) · [Function Calling](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/04_Function_Calling.ipynb) · [Production Patterns](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/09_Production_Patterns.ipynb)
-
-**Références** : [OWASP LLM Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) · [MITRE ATLAS](https://atlas.mitre.org/) · [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework)
-
 ### H1-b — Empoisonnement d'outils MCP
 
 **Difficulté : 4/5** · Mots-clés : `mcp`, `tool-poisoning`, `agents`, `security`
 
-Attaquer puis défendre un agent qui utilise des outils MCP : descriptions d'outils piégées, résultats d'outils contenant des instructions cachées, outil modifié après son approbation. Le verrou technique est la confiance accordée aux outils et à leurs sorties, là où H1 mesure l'injection dans les entrées et les documents.
+Attaquer puis défendre un agent qui utilise des outils MCP : descriptions d'outils piégées, résultats d'outils contenant des instructions cachées, outil modifié après son approbation. Le verrou technique est la confiance accordée aux outils et à leurs sorties, là où la fiche H1, développée par l'autre filière, mesure l'injection dans les entrées et les documents.
 
 - **MVP** : trois serveurs MCP de test dont un malveillant, 30 scénarios d'attaque, deux défenses (filtrage des descriptions, puis validation des résultats ou confirmation humaine).
 - **Réussite** : taux de réussite des attaques avant/après défense, tâches légitimes encore réussies, coût en latence, analyse des contournements.
