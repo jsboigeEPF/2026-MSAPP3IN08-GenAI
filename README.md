@@ -38,7 +38,7 @@ Le projet est réalisé progressivement et doit rester démontrable tout au long
 7. Si le groupe est bloqué, ouvrez tôt une [demande d'accompagnement](https://github.com/jsboigeEPF/2026-MSAPP3IN08-GenAI/issues/new?template=demande-accompagnement.yml).
 8. Ouvrez une Pull Request vers ce dépôt avant la date limite.
 
-Les sujets libres sont possibles, mais doivent être proposés avec le [formulaire dédié](https://github.com/jsboigeEPF/2026-MSAPP3IN08-GenAI/issues/new?template=proposition-sujet.yml) et validés avant développement.
+Les sujets libres sont possibles, mais doivent être proposés avec le [formulaire dédié](https://github.com/jsboigeEPF/2026-MSAPP3IN08-GenAI/issues/new?template=proposition-sujet.yml), ou par une Pull Request qui ajoute leur fiche au [catalogue](docs/CATALOGUE.md) au même format, et validés avant développement.
 
 ## Deux circuits de contribution distincts
 
