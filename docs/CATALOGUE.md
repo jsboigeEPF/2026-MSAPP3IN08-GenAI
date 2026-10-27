@@ -1,8 +1,8 @@
 # Catalogue des sujets 2026
 
-Ce catalogue est l'offre officielle **2026-2027** du module : **52 sujets actifs** répartis en douze axes. Un sujet attribué à un groupe dans le classeur d'inscription du cours devient indisponible aux autres groupes ; un sujet libre y entre par le formulaire de proposition ou par une Pull Request qui ajoute sa fiche à ce catalogue, au même format, puis validation de l'enseignant. Chaque sujet définit un MVP réalisable en six semaines, un protocole d'évaluation et un plan de repli. Les notebooks liés sont des ressources de démarrage : le livrable doit aller au-delà de leur reproduction.
+Ce catalogue est l'offre officielle **2026-2027** du module : **53 sujets actifs** répartis en douze axes. Un sujet attribué à un groupe dans le classeur d'inscription du cours devient indisponible aux autres groupes ; un sujet libre y entre par le formulaire de proposition ou par une Pull Request qui ajoute sa fiche à ce catalogue, au même format, puis validation de l'enseignant. Chaque sujet définit un MVP réalisable en six semaines, un protocole d'évaluation et un plan de repli. Les notebooks liés sont des ressources de démarrage : le livrable doit aller au-delà de leur reproduction.
 
-La numérotation des fiches est héritée du catalogue commun des modules GenAI EPF : les identifiants absents correspondent à des sujets réservés cette année par des groupes d'une autre filière. Les fiches A6–A7, B6–B7, C5–C6, D5–D6, E5 et F5 sont des ajouts 2026 propres à ce module. Les fiches E4-b, H1-b, K2-b à K2-d et L2-b sont des variantes : elles gardent le thème de la fiche d'origine mais en changent le verrou technique et la mesure, afin que plusieurs groupes attirés par un même thème aient chacun un sujet distinct. Le 27/10, les fiches B5 et H1 ont été retirées parce que des groupes de l'autre filière les développent : un sujet n'est jamais proposé dans les deux catalogues. La variante H1-b reste proposée.
+La numérotation des fiches est héritée du catalogue commun des modules GenAI EPF : les identifiants absents correspondent à des sujets réservés cette année par des groupes d'une autre filière. Les fiches A6–A7, B6–B7, C5–C6, D5–D6, E5 et F5 sont des ajouts 2026 propres à ce module. Les fiches E4-b, H1-b, K2-b à K2-d et L2-b sont des variantes : elles gardent le thème de la fiche d'origine mais en changent le verrou technique et la mesure, afin que plusieurs groupes attirés par un même thème aient chacun un sujet distinct. Le 27/10, les fiches B5 et H1 ont été retirées parce que des groupes de l'autre filière les développent : un sujet n'est jamais proposé dans les deux catalogues. La variante H1-b reste proposée. Le 28/10, la fiche E1 est de nouveau proposée : le groupe de l'autre filière qui l'avait retenue a finalement choisi un autre sujet.
 
 Consultez également les [sujets historiques exclus](HISTORIQUE-SUJETS.md), le [guide de soumission](GUIDE-SOUMISSION.md) et les [modalités d'évaluation](EVALUATION.md).
 
@@ -14,7 +14,7 @@ Consultez également les [sujets historiques exclus](HISTORIQUE-SUJETS.md), le [
 | B — Agents, orchestration et MCP | [B3](#b3--orchestrateur-agentique-sous-budget) · [B4](#b4--générateur-auto-validant-de-notebooks) · [B6](#b6--délibération-multi-agents-évaluée) · [B7](#b7--négociation-multi-agents-mesurée) |
 | C — Images | [C1](#c1--benchmark-dévaluation-dédition-dimages) · [C4](#c4--cohérence-dune-série-visuelle) · [C5](#c5--restauration-dimages-sans-invention) · [C6](#c6--images-synthétiques-pour-lentraînement) |
 | D — Audio et voix | [D3](#d3--séparation-et-restauration-de-sources-audio) · [D4](#d4--synthèse-vocale-expressive-et-prosodie) · [D5](#d5--diarisation-et-transcription-de-réunion) · [D6](#d6--podcast-sourcé-de-bout-en-bout) |
-| E — Vidéo | [E2](#e2--benchmark-de-compréhension-temporelle-vidéo) · [E3](#e3--pipeline-audiovisuel-synchronisé) · [E4](#e4--restauration-et-upscaling-vidéo) · [E4-b](#e4-b--interpolation-dimages-et-ralenti) · [E5](#e5--montage-automatique-mesuré) |
+| E — Vidéo | [E1](#e1--micro-capsules-vidéo-pédagogiques) · [E2](#e2--benchmark-de-compréhension-temporelle-vidéo) · [E3](#e3--pipeline-audiovisuel-synchronisé) · [E4](#e4--restauration-et-upscaling-vidéo) · [E4-b](#e4-b--interpolation-dimages-et-ralenti) · [E5](#e5--montage-automatique-mesuré) |
 | F — Plateformes et production | [F2](#f2--rag-wordpress-isolé-et-mesuré) · [F3](#f3--application-genai-observable-avec-net-aspire) · [F4](#f4--routeur-multi-fournisseurs-avec-failover) · [F5](#f5--assistant-support-avec-escalade-mesurée) |
 | G — Ingénierie assistée | [G1](#g1--banc-dessai-dagents-de-codage) · [G2](#g2--garde-fous-roslyn-pour-code-généré) · [G3](#g3--pair-programming-ia-en-étude-contrôlée) · [G4](#g4--migration-de-code-par-tests-différentiels) |
 | H — Évaluation, sécurité et fiabilité | [H1-b](#h1-b--empoisonnement-doutils-mcp) · [H2](#h2--harness-dévaluation-dagents) · [H3](#h3--observatoire-du-reward-hacking) · [H4](#h4--provenance-et-détection-de-contenus-synthétiques) · [H5](#h5--constitution-ia-et-coût-des-refus) |
@@ -305,6 +305,21 @@ Produire automatiquement un épisode de podcast parlé à partir d'un sujet et d
 ---
 
 ## E — Vidéo et médias composés
+
+### E1 — Micro-capsules vidéo pédagogiques
+
+**Difficulté : 3/5** · Mots-clés : `video`, `storyboard`, `education`, `pipeline`
+
+Produire une capsule de 60 à 90 secondes depuis un objectif pédagogique : script, storyboard, plans courts, narration et montage. Le sujet reprend le storyboard jamais livré en 2025, avec un pipeline et une évaluation explicites.
+
+- **MVP** : trois scènes cohérentes, narration, sous-titres et générique des sources.
+- **Réussite** : exactitude du contenu, cohérence inter-scènes, lisibilité et comparaison de deux stratégies de génération.
+- **Extensions** : audiovisuel joint, accessibilité, traduction.
+- **Faisabilité** : génération coûteuse et lente ; plafonner les scènes et le budget à 20 €. Plan B : image-to-video ou slideshow animé.
+
+**CoursIA** : [Educational Video Generation](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Video/04-Applications/04-1-Educational-Video-Generation.ipynb) · [Video Workflow Orchestration](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Video/03-Orchestration/03-2-Video-Workflow-Orchestration.ipynb) · [SVD Image-to-Video](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Video/02-Advanced/02-4-SVD-Image-to-Video.ipynb)
+
+**Références** : [Diffusers — text-to-video](https://huggingface.co/docs/diffusers/using-diffusers/text-img2vid) · [MoviePy](https://zulko.github.io/moviepy/) · [FFmpeg](https://ffmpeg.org/documentation.html)
 
 ### E2 — Benchmark de compréhension temporelle vidéo
 
