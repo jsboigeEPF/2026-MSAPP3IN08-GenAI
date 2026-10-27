@@ -1,8 +1,8 @@
 # Catalogue des sujets 2026
 
-Ce catalogue est l'offre officielle **2026-2027** du module : **48 sujets actifs** répartis en douze axes. Un sujet réservé par une issue d'inscription devient indisponible aux autres groupes ; un sujet libre validé y entre par le formulaire de proposition. Chaque sujet définit un MVP réalisable en six semaines, un protocole d'évaluation et un plan de repli. Les notebooks liés sont des ressources de démarrage : le livrable doit aller au-delà de leur reproduction.
+Ce catalogue est l'offre officielle **2026-2027** du module : **54 sujets actifs** répartis en douze axes. Un sujet attribué à un groupe dans le classeur d'inscription du cours devient indisponible aux autres groupes ; un sujet libre y entre par le formulaire de proposition ou par une Pull Request qui ajoute sa fiche à ce catalogue, au même format, puis validation de l'enseignant. Chaque sujet définit un MVP réalisable en six semaines, un protocole d'évaluation et un plan de repli. Les notebooks liés sont des ressources de démarrage : le livrable doit aller au-delà de leur reproduction.
 
-La numérotation des fiches est héritée du catalogue commun des modules GenAI EPF : les identifiants absents correspondent à des sujets réservés cette année par des groupes d'une autre filière. Les fiches A6–A7, B6–B7, C5–C6, D5–D6, E5 et F5 sont des ajouts 2026 propres à ce module.
+La numérotation des fiches est héritée du catalogue commun des modules GenAI EPF : les identifiants absents correspondent à des sujets réservés cette année par des groupes d'une autre filière. Les fiches A6–A7, B6–B7, C5–C6, D5–D6, E5 et F5 sont des ajouts 2026 propres à ce module. Les fiches E4-b, H1-b, K2-b à K2-d et L2-b sont des variantes : elles gardent le thème de la fiche d'origine mais en changent le verrou technique et la mesure, afin que plusieurs groupes attirés par un même thème aient chacun un sujet distinct.
 
 Consultez également les [sujets historiques exclus](HISTORIQUE-SUJETS.md), le [guide de soumission](GUIDE-SOUMISSION.md) et les [modalités d'évaluation](EVALUATION.md).
 
@@ -14,14 +14,14 @@ Consultez également les [sujets historiques exclus](HISTORIQUE-SUJETS.md), le [
 | B — Agents, orchestration et MCP | [B3](#b3--orchestrateur-agentique-sous-budget) · [B4](#b4--générateur-auto-validant-de-notebooks) · [B5](#b5--workflow-agentique-résilient-et-idempotent) · [B6](#b6--délibération-multi-agents-évaluée) · [B7](#b7--négociation-multi-agents-mesurée) |
 | C — Images | [C1](#c1--benchmark-dévaluation-dédition-dimages) · [C4](#c4--cohérence-dune-série-visuelle) · [C5](#c5--restauration-dimages-sans-invention) · [C6](#c6--images-synthétiques-pour-lentraînement) |
 | D — Audio et voix | [D3](#d3--séparation-et-restauration-de-sources-audio) · [D4](#d4--synthèse-vocale-expressive-et-prosodie) · [D5](#d5--diarisation-et-transcription-de-réunion) · [D6](#d6--podcast-sourcé-de-bout-en-bout) |
-| E — Vidéo | [E2](#e2--benchmark-de-compréhension-temporelle-vidéo) · [E3](#e3--pipeline-audiovisuel-synchronisé) · [E4](#e4--restauration-et-upscaling-vidéo) · [E5](#e5--montage-automatique-mesuré) |
+| E — Vidéo | [E2](#e2--benchmark-de-compréhension-temporelle-vidéo) · [E3](#e3--pipeline-audiovisuel-synchronisé) · [E4](#e4--restauration-et-upscaling-vidéo) · [E4-b](#e4-b--interpolation-dimages-et-ralenti) · [E5](#e5--montage-automatique-mesuré) |
 | F — Plateformes et production | [F2](#f2--rag-wordpress-isolé-et-mesuré) · [F3](#f3--application-genai-observable-avec-net-aspire) · [F4](#f4--routeur-multi-fournisseurs-avec-failover) · [F5](#f5--assistant-support-avec-escalade-mesurée) |
 | G — Ingénierie assistée | [G1](#g1--banc-dessai-dagents-de-codage) · [G2](#g2--garde-fous-roslyn-pour-code-généré) · [G3](#g3--pair-programming-ia-en-étude-contrôlée) · [G4](#g4--migration-de-code-par-tests-différentiels) |
-| H — Évaluation, sécurité et fiabilité | [H1](#h1--laboratoire-red-team-dinjection-de-prompt) · [H2](#h2--harness-dévaluation-dagents) · [H3](#h3--observatoire-du-reward-hacking) · [H4](#h4--provenance-et-détection-de-contenus-synthétiques) · [H5](#h5--constitution-ia-et-coût-des-refus) |
+| H — Évaluation, sécurité et fiabilité | [H1](#h1--laboratoire-red-team-dinjection-de-prompt) · [H1-b](#h1-b--empoisonnement-doutils-mcp) · [H2](#h2--harness-dévaluation-dagents) · [H3](#h3--observatoire-du-reward-hacking) · [H4](#h4--provenance-et-détection-de-contenus-synthétiques) · [H5](#h5--constitution-ia-et-coût-des-refus) |
 | I — Adaptation et inférence | [I1](#i1--qlora-sans-contamination-de-lévaluation) · [I2](#i2--inférence-locale-net-face-aux-api-cloud) · [I3](#i3--frontière-coût-précision-du-test-time-compute) · [I4](#i4--fusion-et-routage-de-modèles-spécialisés) |
 | J — Données, science et décision | [J1](#j1--assistant-de-preuves-scientifiques) · [J2](#j2--analyste-multimodal-de-données) · [J3](#j3--expériences-reproductibles-auto-validées) |
-| K — IA responsable, gouvernance et sobriété | [K1](#k1--confidentialité-des-données-synthétiques) · [K2](#k2--traçabilité-et-licences-des-générations) · [K3](#k3--sobriété--coût-énergie-et-tokens) |
-| L — Applications sectorielles évaluables | [L1](#l1--assistant-médical-borné-avec-abstention) · [L2](#l2--analyse-financière-sourcée-et-auditable) · [L3](#l3--tuteur-adaptatif-avec-mesure-dapprentissage) |
+| K — IA responsable, gouvernance et sobriété | [K1](#k1--confidentialité-des-données-synthétiques) · [K2](#k2--traçabilité-et-licences-des-générations) · [K2-b](#k2-b--licences-du-code-généré) · [K2-c](#k2-c--fiches-modèle-vérifiées-contre-les-artefacts) · [K2-d](#k2-d--contrôles-ai-act-exécutables) · [K3](#k3--sobriété--coût-énergie-et-tokens) |
+| L — Applications sectorielles évaluables | [L1](#l1--assistant-médical-borné-avec-abstention) · [L2](#l2--analyse-financière-sourcée-et-auditable) · [L2-b](#l2-b--extraction-de-tableaux-financiers-complexes-ou-scannés) · [L3](#l3--tuteur-adaptatif-avec-mesure-dapprentissage) |
 
 ## Lire une fiche
 
@@ -359,12 +359,27 @@ Améliorer une vidéo dégradée tout en évitant scintillement et détails inve
 
 - **MVP** : 15 clips dégradés, deux méthodes, métriques par frame et mesure de stabilité temporelle.
 - **Réussite** : PSNR/SSIM, métrique perceptuelle, flicker et étude humaine aveugle.
-- **Extensions** : interpolation, restauration de visages, traitement en flux.
+- **Extensions** : restauration de visages, traitement en flux (l'interpolation relève de E4-b).
 - **Faisabilité** : extraits courts et modèles pré-entraînés ; GPU partagé utile. Plan B : résolution réduite.
 
 **CoursIA** : [Video Enhancement ESRGAN](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Video/01-Foundation/01-4-Video-Enhancement-ESRGAN.ipynb) · [Production Video Pipeline](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Video/04-Applications/04-4-Production-Video-Pipeline.ipynb)
 
 **Références** : [Real-ESRGAN](https://arxiv.org/abs/2107.10833) · [BasicVSR++](https://arxiv.org/abs/2104.13371) · [VMAF](https://github.com/Netflix/vmaf)
+
+### E4-b — Interpolation d'images et ralenti
+
+**Difficulté : 4/5** · Mots-clés : `frame-interpolation`, `optical-flow`, `slow-motion`, `video`
+
+Générer des images intermédiaires pour doubler ou quadrupler la cadence d'une vidéo. Le verrou technique est le mouvement rapide et les occlusions (objets qui apparaissent ou disparaissent entre deux images), là où E4 traite la cohérence temporelle d'une restauration.
+
+- **MVP** : 15 clips courts, images retirées puis reconstruites, deux méthodes (fondu linéaire comme référence et un modèle d'interpolation pré-entraîné).
+- **Réussite** : PSNR/SSIM/LPIPS sur les images retirées, analyse séparée des scènes à mouvement rapide et à occlusion, petite étude humaine en préférence A/B.
+- **Extensions** : interpolation ×4/×8, détection automatique des artefacts, comparaison à un rendu natif haute cadence.
+- **Faisabilité** : modèles légers sur CPU pour des clips courts ; GPU utile mais non requis. Plan B : clips très courts en basse résolution, résultats pré-calculés.
+
+**CoursIA** : [Video Operations Basics](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Video/01-Foundation/01-1-Video-Operations-Basics.ipynb) · [Video Enhancement ESRGAN](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Video/01-Foundation/01-4-Video-Enhancement-ESRGAN.ipynb)
+
+**Références** : [RIFE](https://arxiv.org/abs/2011.06294) · [FILM — Frame Interpolation for Large Motion](https://arxiv.org/abs/2202.04901) · [TOFlow / Vimeo-90K](https://arxiv.org/abs/1711.09078)
 
 ### E5 — Montage automatique mesuré
 
@@ -528,6 +543,21 @@ Construire une batterie reproductible d'attaques directes et indirectes contre u
 
 **Références** : [OWASP LLM Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) · [MITRE ATLAS](https://atlas.mitre.org/) · [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework)
 
+### H1-b — Empoisonnement d'outils MCP
+
+**Difficulté : 4/5** · Mots-clés : `mcp`, `tool-poisoning`, `agents`, `security`
+
+Attaquer puis défendre un agent qui utilise des outils MCP : descriptions d'outils piégées, résultats d'outils contenant des instructions cachées, outil modifié après son approbation. Le verrou technique est la confiance accordée aux outils et à leurs sorties, là où H1 mesure l'injection dans les entrées et les documents.
+
+- **MVP** : trois serveurs MCP de test dont un malveillant, 30 scénarios d'attaque, deux défenses (filtrage des descriptions, puis validation des résultats ou confirmation humaine).
+- **Réussite** : taux de réussite des attaques avant/après défense, tâches légitimes encore réussies, coût en latence, analyse des contournements.
+- **Extensions** : signature ou épinglage des descriptions d'outils, détection de changement, comparaison de plusieurs modèles.
+- **Faisabilité** : serveurs MCP locaux et outils sans effet réel ; petits modèles ou clé du module ; aucun GPU. Plan B : traces d'agent pré-enregistrées rejouées.
+
+**CoursIA** : [MCP Attack Surface](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Security/Tooling/Tooling-MCP-Attack-Surface.ipynb) · [Prompt Security Red Team](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/09b_Prompt_Security_RedTeam.ipynb) · [Semantic Kernel MCP](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/SemanticKernel/08-SemanticKernel-MCP.ipynb)
+
+**Références** : [MCP — Security Best Practices](https://modelcontextprotocol.io/specification/2025-06-18/basic/security_best_practices) · [OWASP LLM Prompt Injection](https://genai.owasp.org/llmrisk/llm01-prompt-injection/) · [MITRE ATLAS](https://atlas.mitre.org/)
+
 ### H2 — Harness d'évaluation d'agents
 
 **Difficulté : 4/5** · Mots-clés : `agent-evaluation`, `llm-as-judge`, `regression`, `calibration`
@@ -618,7 +648,7 @@ Comparer LLamaSharp, ONNX Runtime GenAI ou TensorSharp à une API cloud sur une 
 - **Extensions** : quantifications multiples, batching, streaming.
 - **Faisabilité** : modèles compacts ; CPU accepté ; budget cloud de comparaison inférieur à 8 €. Plan B : GGUF très quantifié et sous-échantillon.
 
-**CoursIA** : [Inference Mechanics](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/10b_Inference_Mechanics.ipynb) · [ORT GenAI Bake-Off](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/10f_ORTGenAI_DotNet_BakeOff.ipynb) · [Quantization](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/11_Quantization.ipynb)
+**CoursIA** : [Inference Mechanics](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/10b_Inference_Mechanics.ipynb) · [Bake-off .NET TensorSharp / ORT GenAI](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/10d_TensorSharp_DotNet_Inference.ipynb) · [Quantization](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/11_Quantization.ipynb)
 
 **Références** : [LLamaSharp](https://github.com/SciSharp/LLamaSharp) · [ONNX Runtime GenAI](https://onnxruntime.ai/docs/genai/) · [llama.cpp](https://github.com/ggml-org/llama.cpp)
 
@@ -735,6 +765,51 @@ Construire une chaîne qui associe à chaque génération ses modèles, prompts,
 
 **Références** : [SPDX](https://spdx.dev/) · [Model Cards](https://arxiv.org/abs/1810.03993) · [C2PA](https://c2pa.org/)
 
+### K2-b — Licences du code généré
+
+**Difficulté : 3/5** · Mots-clés : `code-generation`, `licensing`, `memorization`, `compliance`
+
+Détecter quand un assistant de code reproduit un extrait sous licence et signaler l'obligation qui en découle. Le verrou technique est la détection de reproduction exacte ou quasi exacte dans du code généré, là où K2 trace les métadonnées d'une chaîne de génération.
+
+- **MVP** : 60 prompts de code, sorties de deux modèles, détection par empreintes ou similarité contre un corpus de référence aux licences connues, rapport de licences SPDX.
+- **Réussite** : extraits copiés injectés retrouvés (rappel), faux positifs sur du code original, taux de reproduction par modèle et par type de prompt.
+- **Extensions** : filtre en sortie de l'assistant, comparaison de seuils, vérification automatique sur une Pull Request.
+- **Faisabilité** : petits modèles de code locaux et corpus public ; aucun GPU requis. Plan B : sorties pré-générées.
+
+**CoursIA** : [Roslyn Code Guardrails](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Vibe-Coding/analyzers/Roslyn-Code-Guardrails.ipynb) · [Production Patterns](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/09_Production_Patterns.ipynb)
+
+**Références** : [The Stack](https://arxiv.org/abs/2211.15533) · [ScanCode Toolkit](https://github.com/aboutcode-org/scancode-toolkit) · [SPDX License List](https://spdx.org/licenses/)
+
+### K2-c — Fiches modèle vérifiées contre les artefacts
+
+**Difficulté : 2/5** · Mots-clés : `model-cards`, `datasheets`, `documentation`, `audit`
+
+Vérifier automatiquement qu'une fiche modèle ou une fiche de jeu de données dit vrai : licence, données d'entraînement déclarées, métriques annoncées, limites. Le verrou technique est la confrontation de la documentation aux artefacts réels (fichiers, configuration, ré-exécution d'une métrique), là où K2 produit un manifeste.
+
+- **MVP** : 20 fiches publiques, huit contrôles exécutables (licence cohérente, champs obligatoires, métrique ré-exécutée sur un petit échantillon…), rapport d'écarts.
+- **Réussite** : écarts injectés détectés, faux positifs, part des fiches réelles présentant un écart, reproductibilité du rapport.
+- **Extensions** : génération assistée d'une fiche corrigée, suivi entre versions d'un modèle.
+- **Faisabilité** : fiches et petits modèles publics ; aucun GPU. Plan B : contrôles statiques seulement, sans ré-exécution.
+
+**CoursIA** : [MiniMax — Architecture et licences](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Video/02-Advanced/02-6-MiniMax-H3-Architecture-Licensing.ipynb) · [Structured Outputs](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/03_Structured_Outputs.ipynb)
+
+**Références** : [Model Cards](https://arxiv.org/abs/1810.03993) · [Datasheets for Datasets](https://arxiv.org/abs/1803.09010) · [Hugging Face — Model Cards](https://huggingface.co/docs/hub/model-cards)
+
+### K2-d — Contrôles AI Act exécutables
+
+**Difficulté : 3/5** · Mots-clés : `governance`, `ai-act`, `compliance-as-code`, `audit`
+
+Traduire quelques obligations de transparence et de gestion des risques en contrôles automatiques sur une application GenAI : mention de contenu généré, journalisation, documentation, supervision humaine. Le verrou technique est la conformité exprimée en tests vérifiables ; le projet ne donne aucun avis juridique.
+
+- **MVP** : dix obligations choisies et reformulées en contrôles, une application de démonstration en deux versions (conforme et non conforme), rapport d'audit.
+- **Réussite** : manquements injectés détectés, faux positifs, couverture des obligations retenues, justification écrite de chaque contrôle.
+- **Extensions** : correspondance avec le NIST AI RMF, contrôle en intégration continue, suivi dans le temps.
+- **Faisabilité** : application locale, aucun GPU, budget nul. Plan B : contrôles sur des journaux pré-enregistrés.
+
+**CoursIA** : [Production Exploitation](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/09e_Production_Exploitation.ipynb) · [Production Patterns](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/09_Production_Patterns.ipynb)
+
+**Références** : [Commission européenne — AI Act](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) · [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) · [NIST AI 600-1 — Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
+
 ### K3 — Sobriété : coût, énergie et tokens
 
 **Difficulté : 3/5** · Mots-clés : `efficiency`, `energy`, `tokens`, `benchmark`
@@ -777,12 +852,27 @@ Extraire des indicateurs de rapports publics et produire une analyse dont chaque
 
 - **MVP** : dix rapports publics, 30 questions, extraction structurée, calculs vérifiés et citations de pages.
 - **Réussite** : exactitude numérique, provenance, détection de périodes/unités incompatibles et taux d'abstention.
-- **Extensions** : tableaux scannés, comparaison d'entreprises, détection d'anomalies.
+- **Extensions** : comparaison d'entreprises, détection d'anomalies (les tableaux scannés relèvent de L2-b).
 - **Faisabilité** : rapports publics ; aucun conseil financier réel. Plan B : petit corpus local annoté.
 
 **CoursIA** : [PDF Web Search](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/06_PDF_Web_Search.ipynb) · [Structured Outputs](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/03_Structured_Outputs.ipynb)
 
 **Références** : [SEC EDGAR APIs](https://www.sec.gov/search-filings/edgar-application-programming-interfaces) · [XBRL International](https://www.xbrl.org/) · [FinQA](https://arxiv.org/abs/2109.00122)
+
+### L2-b — Extraction de tableaux financiers complexes ou scannés
+
+**Difficulté : 3/5** · Mots-clés : `table-extraction`, `document-ai`, `ocr`, `finance`
+
+Extraire fidèlement les tableaux de rapports financiers publics (cellules fusionnées, en-têtes sur plusieurs niveaux, pages scannées) vers un format structuré vérifiable. Le verrou technique est la reconstruction de la structure du tableau, là où L2 traite la réponse sourcée à des questions. Aucune prédiction ni stratégie de trading.
+
+- **MVP** : 30 tableaux annotés à la main dont dix scannés, deux chaînes (extracteur PDF classique, modèle multimodal ou de reconnaissance de tableaux), export JSON/CSV.
+- **Réussite** : TEDS (similarité de structure), exactitude par cellule, contrôle arithmétique des totaux recalculés, analyse des erreurs par type de tableau.
+- **Extensions** : rapprochement entre exercices, détection des unités et des échelles, tableaux répartis sur deux pages.
+- **Faisabilité** : rapports publics et outils open source sur CPU ; budget API inférieur à 5 €. Plan B : PDF natifs uniquement, sans les scans.
+
+**CoursIA** : [PDF Web Search](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/06_PDF_Web_Search.ipynb) · [Structured Outputs](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/03_Structured_Outputs.ipynb)
+
+**Références** : [PubTabNet](https://arxiv.org/abs/1911.10683) · [PubTables-1M](https://arxiv.org/abs/2110.00061) · [GTE / FinTabNet](https://arxiv.org/abs/2005.00589)
 
 ### L3 — Tuteur adaptatif avec mesure d'apprentissage
 
