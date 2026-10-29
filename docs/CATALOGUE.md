@@ -1,8 +1,8 @@
 # Catalogue des sujets 2026
 
-Ce catalogue est l'offre officielle **2026-2027** du module : **53 sujets actifs** répartis en douze axes. Un sujet attribué à un groupe dans le classeur d'inscription du cours devient indisponible aux autres groupes ; un sujet libre y entre par le formulaire de proposition ou par une Pull Request qui ajoute sa fiche à ce catalogue, au même format, puis validation de l'enseignant. Chaque sujet définit un MVP réalisable en six semaines, un protocole d'évaluation et un plan de repli. Les notebooks liés sont des ressources de démarrage : le livrable doit aller au-delà de leur reproduction.
+Ce catalogue est l'offre officielle **2026-2027** du module : **70 sujets actifs** répartis en douze axes. Un sujet attribué à un groupe dans le classeur d'inscription du cours devient indisponible aux autres groupes ; un sujet libre y entre par le formulaire de proposition ou par une Pull Request qui ajoute sa fiche à ce catalogue, au même format, puis validation de l'enseignant. Chaque sujet définit un MVP réalisable en six semaines, un protocole d'évaluation et un plan de repli. Les notebooks liés sont des ressources de démarrage : le livrable doit aller au-delà de leur reproduction.
 
-La numérotation des fiches est héritée du catalogue commun des modules GenAI EPF : les identifiants absents correspondent à des sujets réservés cette année par des groupes d'une autre filière. Les fiches A6–A7, B6–B7, C5–C6, D5–D6, E5 et F5 sont des ajouts 2026 propres à ce module. Les fiches E4-b, H1-b, K2-b à K2-d et L2-b sont des variantes : elles gardent le thème de la fiche d'origine mais en changent le verrou technique et la mesure, afin que plusieurs groupes attirés par un même thème aient chacun un sujet distinct. Le 27/10, les fiches B5 et H1 ont été retirées parce que des groupes de l'autre filière les développent : un sujet n'est jamais proposé dans les deux catalogues. La variante H1-b reste proposée. Le 28/10, la fiche E1 est de nouveau proposée : le groupe de l'autre filière qui l'avait retenue a finalement choisi un autre sujet.
+La numérotation des fiches est héritée du catalogue commun des modules GenAI EPF : les identifiants absents correspondent à des sujets réservés cette année par des groupes d'une autre filière. Les fiches A6–A7, B6–B7, C5–C6, D5–D6, E5 et F5 sont des ajouts 2026 propres à ce module. Les fiches E4-b, H1-b, K2-b à K2-d et L2-b sont des variantes : elles gardent le thème de la fiche d'origine mais en changent le verrou technique et la mesure, afin que plusieurs groupes attirés par un même thème aient chacun un sujet distinct. Le 27/10, les fiches B5 et H1 ont été retirées parce que des groupes de l'autre filière les développent : un sujet n'est jamais proposé dans les deux catalogues. La variante H1-b reste proposée. Le 28/10, la fiche E1 est de nouveau proposée : le groupe de l'autre filière qui l'avait retenue a finalement choisi un autre sujet. Le 29/10, dix-sept fiches ont été ajoutées pour élargir l'offre : A6-b et K2-e sont des variantes des deux sujets les plus demandés ; A8, B8, B9, C7, C8, C9, D7, E6, F6, G5, I5, I6, I7, K4 et L4 ouvrent des thèmes absents du catalogue, sans reprendre un sujet de l'autre filière ni un thème exclu par l'[historique](HISTORIQUE-SUJETS.md).
 
 Consultez également les [sujets historiques exclus](HISTORIQUE-SUJETS.md), le [guide de soumission](GUIDE-SOUMISSION.md) et les [modalités d'évaluation](EVALUATION.md).
 
@@ -10,18 +10,18 @@ Consultez également les [sujets historiques exclus](HISTORIQUE-SUJETS.md), le [
 
 | Catégorie | Sujets |
 |---|---|
-| A — Texte structuré, RAG et mémoire | [A2](#a2--mémoire-persistante-multi-sessions) · [A4](#a4--mémoire-multimodale-évaluable) · [A5](#a5--long-contexte-contre-rag-sous-ablation) · [A6](#a6--réécriture-contrôlée-par-attributs) · [A7](#a7--cohérence-interne-des-documents-longs) |
-| B — Agents, orchestration et MCP | [B3](#b3--orchestrateur-agentique-sous-budget) · [B4](#b4--générateur-auto-validant-de-notebooks) · [B6](#b6--délibération-multi-agents-évaluée) · [B7](#b7--négociation-multi-agents-mesurée) |
-| C — Images | [C1](#c1--benchmark-dévaluation-dédition-dimages) · [C4](#c4--cohérence-dune-série-visuelle) · [C5](#c5--restauration-dimages-sans-invention) · [C6](#c6--images-synthétiques-pour-lentraînement) |
-| D — Audio et voix | [D3](#d3--séparation-et-restauration-de-sources-audio) · [D4](#d4--synthèse-vocale-expressive-et-prosodie) · [D5](#d5--diarisation-et-transcription-de-réunion) · [D6](#d6--podcast-sourcé-de-bout-en-bout) |
-| E — Vidéo | [E1](#e1--micro-capsules-vidéo-pédagogiques) · [E2](#e2--benchmark-de-compréhension-temporelle-vidéo) · [E3](#e3--pipeline-audiovisuel-synchronisé) · [E4](#e4--restauration-et-upscaling-vidéo) · [E4-b](#e4-b--interpolation-dimages-et-ralenti) · [E5](#e5--montage-automatique-mesuré) |
-| F — Plateformes et production | [F2](#f2--rag-wordpress-isolé-et-mesuré) · [F3](#f3--application-genai-observable-avec-net-aspire) · [F4](#f4--routeur-multi-fournisseurs-avec-failover) · [F5](#f5--assistant-support-avec-escalade-mesurée) |
-| G — Ingénierie assistée | [G1](#g1--banc-dessai-dagents-de-codage) · [G2](#g2--garde-fous-roslyn-pour-code-généré) · [G3](#g3--pair-programming-ia-en-étude-contrôlée) · [G4](#g4--migration-de-code-par-tests-différentiels) |
+| A — Texte structuré, RAG et mémoire | [A2](#a2--mémoire-persistante-multi-sessions) · [A4](#a4--mémoire-multimodale-évaluable) · [A5](#a5--long-contexte-contre-rag-sous-ablation) · [A6](#a6--réécriture-contrôlée-par-attributs) · [A7](#a7--cohérence-interne-des-documents-longs) · [A6-b](#a6-b--simplification-en--facile-à-lire-et-à-comprendre-) · [A8](#a8--vérification-factuelle-atomique-des-réponses-longues) |
+| B — Agents, orchestration et MCP | [B3](#b3--orchestrateur-agentique-sous-budget) · [B4](#b4--générateur-auto-validant-de-notebooks) · [B6](#b6--délibération-multi-agents-évaluée) · [B7](#b7--négociation-multi-agents-mesurée) · [B8](#b8--optimisation-automatique-de-prompts-sur-jeu-de-test) · [B9](#b9--agent-dinterface-web-en-bac-à-sable) |
+| C — Images | [C1](#c1--benchmark-dévaluation-dédition-dimages) · [C4](#c4--cohérence-dune-série-visuelle) · [C5](#c5--restauration-dimages-sans-invention) · [C6](#c6--images-synthétiques-pour-lentraînement) · [C7](#c7--texte-rendu-dans-les-images--fidélité-mesurée) · [C8](#c8--annotation-dimages-par-vlm-face-à-lannotation-humaine) · [C9](#c9--reconstruction-3d-à-vues-réduites) |
+| D — Audio et voix | [D3](#d3--séparation-et-restauration-de-sources-audio) · [D4](#d4--synthèse-vocale-expressive-et-prosodie) · [D5](#d5--diarisation-et-transcription-de-réunion) · [D6](#d6--podcast-sourcé-de-bout-en-bout) · [D7](#d7--transcription-robuste--bruit-accents-et-vocabulaire-métier) |
+| E — Vidéo | [E1](#e1--micro-capsules-vidéo-pédagogiques) · [E2](#e2--benchmark-de-compréhension-temporelle-vidéo) · [E3](#e3--pipeline-audiovisuel-synchronisé) · [E4](#e4--restauration-et-upscaling-vidéo) · [E4-b](#e4-b--interpolation-dimages-et-ralenti) · [E5](#e5--montage-automatique-mesuré) · [E6](#e6--recherche-sémantique-dans-une-vidéothèque) |
+| F — Plateformes et production | [F2](#f2--rag-wordpress-isolé-et-mesuré) · [F3](#f3--application-genai-observable-avec-net-aspire) · [F4](#f4--routeur-multi-fournisseurs-avec-failover) · [F5](#f5--assistant-support-avec-escalade-mesurée) · [F6](#f6--cache-sémantique--économies-et-fausses-réponses) |
+| G — Ingénierie assistée | [G1](#g1--banc-dessai-dagents-de-codage) · [G2](#g2--garde-fous-roslyn-pour-code-généré) · [G3](#g3--pair-programming-ia-en-étude-contrôlée) · [G4](#g4--migration-de-code-par-tests-différentiels) · [G5](#g5--tests-unitaires-générés-évalués-par-mutation) |
 | H — Évaluation, sécurité et fiabilité | [H1-b](#h1-b--empoisonnement-doutils-mcp) · [H2](#h2--harness-dévaluation-dagents) · [H3](#h3--observatoire-du-reward-hacking) · [H4](#h4--provenance-et-détection-de-contenus-synthétiques) · [H5](#h5--constitution-ia-et-coût-des-refus) |
-| I — Adaptation et inférence | [I1](#i1--qlora-sans-contamination-de-lévaluation) · [I2](#i2--inférence-locale-net-face-aux-api-cloud) · [I3](#i3--frontière-coût-précision-du-test-time-compute) · [I4](#i4--fusion-et-routage-de-modèles-spécialisés) |
+| I — Adaptation et inférence | [I1](#i1--qlora-sans-contamination-de-lévaluation) · [I2](#i2--inférence-locale-net-face-aux-api-cloud) · [I3](#i3--frontière-coût-précision-du-test-time-compute) · [I4](#i4--fusion-et-routage-de-modèles-spécialisés) · [I5](#i5--distillation-dun-grand-modèle-vers-un-petit) · [I6](#i6--alignement-par-préférences-dpo-à-petite-échelle) · [I7](#i7--post-training-par-récompenses-vérifiables) |
 | J — Données, science et décision | [J1](#j1--assistant-de-preuves-scientifiques) · [J2](#j2--analyste-multimodal-de-données) · [J3](#j3--expériences-reproductibles-auto-validées) |
-| K — IA responsable, gouvernance et sobriété | [K1](#k1--confidentialité-des-données-synthétiques) · [K2](#k2--traçabilité-et-licences-des-générations) · [K2-b](#k2-b--licences-du-code-généré) · [K2-c](#k2-c--fiches-modèle-vérifiées-contre-les-artefacts) · [K2-d](#k2-d--contrôles-ai-act-exécutables) · [K3](#k3--sobriété--coût-énergie-et-tokens) |
-| L — Applications sectorielles évaluables | [L1](#l1--assistant-médical-borné-avec-abstention) · [L2](#l2--analyse-financière-sourcée-et-auditable) · [L2-b](#l2-b--extraction-de-tableaux-financiers-complexes-ou-scannés) · [L3](#l3--tuteur-adaptatif-avec-mesure-dapprentissage) |
+| K — IA responsable, gouvernance et sobriété | [K1](#k1--confidentialité-des-données-synthétiques) · [K2](#k2--traçabilité-et-licences-des-générations) · [K2-b](#k2-b--licences-du-code-généré) · [K2-c](#k2-c--fiches-modèle-vérifiées-contre-les-artefacts) · [K2-d](#k2-d--contrôles-ai-act-exécutables) · [K3](#k3--sobriété--coût-énergie-et-tokens) · [K2-e](#k2-e--respect-des-réserves-de-fouille-de-textes-et-de-données) · [K4](#k4--anonymisation-de-documents-mesurée) |
+| L — Applications sectorielles évaluables | [L1](#l1--assistant-médical-borné-avec-abstention) · [L2](#l2--analyse-financière-sourcée-et-auditable) · [L2-b](#l2-b--extraction-de-tableaux-financiers-complexes-ou-scannés) · [L3](#l3--tuteur-adaptatif-avec-mesure-dapprentissage) · [L4](#l4--descriptions-dimages-pour-laccessibilité) |
 
 ## Lire une fiche
 
@@ -110,6 +110,36 @@ Construire un détecteur d'incohérences pour des documents générés de plusie
 
 **Références** : [SummaC](https://arxiv.org/abs/2111.09525) · [AlignScore](https://arxiv.org/abs/2305.16739) · [LongBench](https://arxiv.org/abs/2308.14508)
 
+### A6-b — Simplification en « Facile à lire et à comprendre »
+
+**Difficulté : 3/5** · Mots-clés : `text-simplification`, `easy-to-read`, `readability`, `faithfulness`
+
+Réécrire des documents administratifs ou des consignes en français « Facile à lire et à comprendre » (FALC) et prouver que le texte devient plus lisible sans perdre d'information utile. Le verrou technique est la vérification de la fidélité : chaque information du texte source doit se retrouver dans la version simplifiée, ou son omission être justifiée, là où A6 mesure le déplacement de plusieurs attributs de style.
+
+- **MVP** : corpus de 30 documents publics (consignes, courriers, notices), règles FALC traduites en contrôles automatiques, pipeline de simplification et grille de vérification des informations conservées.
+- **Réussite** : scores de lisibilité avant et après, taux d'informations conservées (mêmes questions posées au texte source et au texte simplifié), taux d'ajouts non sourcés, comparaison à une simplification de référence.
+- **Extensions** : relecture par des lecteurs cibles, pictogrammes, simplification interactive.
+- **Faisabilité** : API texte ; budget cible inférieur à 5 €. Plan B : petit modèle local et corpus réduit annoté à la main.
+
+**CoursIA** : [Prompt Engineering](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/02_PromptEngineering.ipynb) · [Structured Outputs](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/03_Structured_Outputs.ipynb) · [Evaluating Generated Text](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/22_Evaluating_Generated_Text.ipynb)
+
+**Références** : [Règles européennes FALC (Inclusion Europe)](https://www.inclusion-europe.eu/easy-to-read/) · [EASSE](https://arxiv.org/abs/1908.04567) · [Sentence-BERT](https://arxiv.org/abs/1908.10084)
+
+### A8 — Vérification factuelle atomique des réponses longues
+
+**Difficulté : 4/5** · Mots-clés : `fact-checking`, `atomic-claims`, `hallucination`, `long-form`
+
+Découper une réponse longue en affirmations élémentaires, vérifier chacune contre des sources, puis produire un score de précision factuelle. Le verrou technique est la qualité du vérificateur lui-même, mesurée sur des réponses dont les erreurs sont connues. A7 cherche les contradictions internes d'un document et J1 construit une réponse argumentée ; A8 audite une réponse déjà écrite.
+
+- **MVP** : 60 réponses longues générées sur des sujets documentés par des sources publiques, erreurs injectées connues, pipeline décomposition, recherche et verdict.
+- **Réussite** : précision et rappel de détection des affirmations fausses, accord avec une annotation humaine sur un échantillon, coût par réponse vérifiée, comparaison à une auto-vérification sans source.
+- **Extensions** : vérification multilingue, sources contradictoires, correction automatique des affirmations fausses.
+- **Faisabilité** : API texte et recherche documentaire ; budget cible inférieur à 8 €. Plan B : corpus de sources figé en local et réponses pré-générées.
+
+**CoursIA** : [Evaluating Generated Text](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/22_Evaluating_Generated_Text.ipynb) · [RAG Modern](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/05_RAG_Modern.ipynb) · [PDF et recherche web](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/06_PDF_Web_Search.ipynb)
+
+**Références** : [FActScore](https://arxiv.org/abs/2305.14251) · [SelfCheckGPT](https://arxiv.org/abs/2303.08896) · [Long-form factuality (SAFE)](https://arxiv.org/abs/2403.18802)
+
 ---
 
 ## B — Agents, orchestration et MCP
@@ -173,6 +203,36 @@ Plonger deux agents dans des négociations à utilités définies (prix, ressour
 **CoursIA** : [Agentic Orchestration](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/13_Agentic_Orchestration.ipynb) · [Reasoning Models](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/08_Reasoning_Models.ipynb) · [Semantic Kernel Agents](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/SemanticKernel/03-SemanticKernel-Agents.ipynb)
 
 **Références** : [Deal or No Deal](https://arxiv.org/abs/1706.05125) · [SOTOPIA](https://arxiv.org/abs/2310.11667) · [Generative Agents](https://arxiv.org/abs/2304.03442)
+
+### B8 — Optimisation automatique de prompts sur jeu de test
+
+**Difficulté : 3/5** · Mots-clés : `prompt-optimization`, `dspy`, `evaluation`, `overfitting`
+
+Comparer des prompts écrits à la main à des prompts optimisés automatiquement (recherche d'instructions, sélection d'exemples) sur plusieurs tâches vérifiables. Le verrou technique est la généralisation : un prompt optimisé doit gagner sur un jeu de test jamais vu pendant l'optimisation, pas seulement sur ses données de réglage.
+
+- **MVP** : trois tâches à réponse vérifiable (classification, extraction, raisonnement court), séparation réglage et test, une méthode d'optimisation et deux modèles.
+- **Réussite** : écart sur le test entre prompt manuel et prompt optimisé avec intervalles de confiance, écart entre réglage et test (surapprentissage du prompt), coût de l'optimisation, transfert du prompt d'un modèle à l'autre.
+- **Extensions** : optimisation qualité et coût à la fois, robustesse aux reformulations des entrées.
+- **Faisabilité** : API texte, modèles peu coûteux ; budget cible inférieur à 8 €. Plan B : petit modèle local et tâches réduites.
+
+**CoursIA** : [Prompt Engineering](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/02_PromptEngineering.ipynb) · [Structured Outputs](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/03_Structured_Outputs.ipynb) · [Agent Evaluation](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/13b_Agent_Evaluation.ipynb)
+
+**Références** : [DSPy](https://arxiv.org/abs/2310.03714) · [OPRO](https://arxiv.org/abs/2309.03409) · [DSPy (code)](https://github.com/stanfordnlp/dspy)
+
+### B9 — Agent d'interface web en bac à sable
+
+**Difficulté : 4/5** · Mots-clés : `web-agents`, `playwright`, `robustness`, `evaluation`
+
+Faire accomplir à un agent des tâches concrètes sur une application web locale (remplir un formulaire, retrouver une commande, modifier un réglage), puis mesurer sa fiabilité quand l'interface change. Le verrou technique est la robustesse aux changements d'interface, mesurée sur des tâches dont le succès se vérifie automatiquement. Ce n'est ni un agent de recherche web ni un planificateur de voyage.
+
+- **MVP** : application web jetable avec 20 tâches et leur vérification automatique, agent piloté par Playwright, trois perturbations d'interface (libellés, ordre des éléments, fenêtre surgissante).
+- **Réussite** : taux de succès par tâche et par perturbation, nombre d'actions, coût par tâche réussie, actions irréversibles évitées.
+- **Extensions** : confirmation humaine avant les actions irréversibles, comparaison entre arbre d'accessibilité et capture d'écran.
+- **Faisabilité** : Playwright et une API texte ou vision ; budget cible inférieur à 10 €. Plan B : agent sur l'arbre d'accessibilité seul, sans vision.
+
+**CoursIA** : [Agentic Orchestration](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/13_Agentic_Orchestration.ipynb) · [Agent Evaluation](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/13b_Agent_Evaluation.ipynb) · [Playwright sur Open WebUI](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Plateformes-Conversationnelles/Open-WebUI/Playwright-OWUI/04-rag-tools-avances/04-RAG-Tools-QA-OWUI.ipynb)
+
+**Références** : [WebArena](https://arxiv.org/abs/2307.13854) · [Mind2Web](https://arxiv.org/abs/2306.06070) · [Playwright pour Python](https://playwright.dev/python/)
 
 ---
 
@@ -238,6 +298,51 @@ Générer des images d'entraînement synthétiques pour une tâche de vision pau
 
 **Références** : [Domain Randomization](https://arxiv.org/abs/1703.06907) · [DatasetDM](https://arxiv.org/abs/2308.06160) · [Latent Diffusion](https://arxiv.org/abs/2112.10752)
 
+### C7 — Texte rendu dans les images : fidélité mesurée
+
+**Difficulté : 3/5** · Mots-clés : `text-rendering`, `ocr`, `benchmark`, `image-generation`
+
+Mesurer si les générateurs d'images écrivent correctement le texte demandé (affiches, panneaux, étiquettes) et ce qu'ils inventent autour. Le verrou technique est une mesure automatique par OCR, validée sur un échantillon relu à la main, de l'écart entre le texte demandé et le texte rendu.
+
+- **MVP** : 50 prompts avec texte imposé (longueur, accents, chiffres), trois modèles, pipeline OCR et mesure de l'écart caractère par caractère.
+- **Réussite** : taux d'erreur par caractère et par mot selon le modèle et la difficulté, texte parasite inventé, accord de l'OCR avec la relecture humaine, coût par image correcte.
+- **Extensions** : texte sur plusieurs lignes, langues à diacritiques, correction par édition d'image.
+- **Faisabilité** : API image (prix dans le Doc du cours) ; budget cible inférieur à 6 €. Plan B : images pré-générées, ou modèle local sur GPU.
+
+**CoursIA** : [Multi-Model Comparison](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Image/03-Orchestration/03-1-Multi-Model-Comparison.ipynb) · [Qwen Image Edit](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Image/01-Foundation/01-5-Qwen-Image-Edit.ipynb)
+
+**Références** : [TextDiffuser](https://arxiv.org/abs/2305.10855) · [docTR (OCR)](https://github.com/mindee/doctr)
+
+### C8 — Annotation d'images par VLM face à l'annotation humaine
+
+**Difficulté : 3/5** · Mots-clés : `vlm`, `annotation`, `agreement`, `cost`
+
+Utiliser un modèle vision-langage pour annoter un jeu d'images (classes, attributs, présence d'objets) et mesurer quand on peut lui faire confiance. Le verrou technique est l'accord avec des annotateurs humains et la détection des cas où le modèle doit s'abstenir, là où C6 génère des images d'entraînement.
+
+- **MVP** : 300 images publiques, schéma d'annotation fermé, double annotation humaine sur 100 images, deux VLM.
+- **Réussite** : accord VLM–humain comparé à l'accord entre humains, erreurs par classe, calibration de la confiance, coût par image annotée.
+- **Extensions** : annotation active (l'humain ne revoit que les cas douteux), petit classifieur entraîné sur les étiquettes du VLM.
+- **Faisabilité** : API vision ; budget cible inférieur à 5 €. Plan B : petit VLM local.
+
+**CoursIA** : [Vision-Language LoRA](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/FineTuning/FT-06-Vision-Language-LoRA-Python.ipynb) · [VLM Character Design Workflow](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Image/03-Orchestration/03-4-VLM-Character-Design-Workflow.ipynb)
+
+**Références** : [ChatGPT face aux annotateurs](https://arxiv.org/abs/2303.15056) · [CLIP](https://arxiv.org/abs/2103.00020)
+
+### C9 — Reconstruction 3D à vues réduites
+
+**Difficulté : 4/5** · Mots-clés : `3d`, `gaussian-splatting`, `nerf`, `few-view`
+
+Reconstruire une scène ou un objet en 3D à partir de photos prises au téléphone, et mesurer combien de vues sont réellement nécessaires. Le verrou technique est la courbe qualité, nombre de vues et temps de calcul, mesurée sur des vues tenues à l'écart de l'entraînement.
+
+- **MVP** : trois scènes capturées par le groupe, reconstruction par Gaussian Splatting avec 10 à 100 vues, protocole de vues de test.
+- **Réussite** : PSNR, SSIM et LPIPS sur les vues de test selon le nombre de vues, temps d'entraînement, taille du modèle, artefacts documentés.
+- **Extensions** : initialisation par un modèle génératif image vers 3D, compression des splats, comparaison avec NeRF.
+- **Faisabilité** : GPU nécessaire (Colab ou Kaggle gratuits) ; aucun coût d'API. Plan B : scènes publiques déjà calibrées et nombre de vues réduit.
+
+**CoursIA** : [Gaussian Splats : concepts](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/3D/3D-03-Gaussian-Splats-Concepts.ipynb) · [3DGS avec gsplat](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/3D/3D-04-3DGS-From-Scratch-with-gsplat.ipynb) · [3DGS : compromis](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/3D/3D-05-3DGS-Optimization-Tradeoffs.ipynb) · [NeRF](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/3D/3D-01-NeRF-From-Scratch.ipynb)
+
+**Références** : [3D Gaussian Splatting](https://arxiv.org/abs/2308.04079) · [gsplat](https://arxiv.org/abs/2409.06765) · [NeRF](https://arxiv.org/abs/2003.08934)
+
 ---
 
 ## D — Audio et voix
@@ -301,6 +406,21 @@ Produire automatiquement un épisode de podcast parlé à partir d'un sujet et d
 **CoursIA** : [Audiobook Pipeline](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Audio/04-Applications/04-6-Audiobook-Pipeline.ipynb) · [PDF Web Search](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/06_PDF_Web_Search.ipynb) · [Expressive TTS](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Audio/02-Advanced/02-8-Expressive-TTS.ipynb)
 
 **Références** : [QAGS](https://arxiv.org/abs/2004.04228) · [P.808](https://www.itu.int/rec/P-REC-P.808) · [SSML](https://www.w3.org/TR/speech-synthesis11/)
+
+### D7 — Transcription robuste : bruit, accents et vocabulaire métier
+
+**Difficulté : 3/5** · Mots-clés : `asr`, `robustness`, `wer`, `french`
+
+Mesurer comment la transcription automatique se dégrade avec le bruit, les accents et le vocabulaire spécialisé, puis tester des remèdes. Le verrou technique est un protocole contrôlé par condition, avec des remèdes évalués un par un (débruitage, liste de vocabulaire, correction par LLM), là où D5 traite l'attribution des locuteurs.
+
+- **MVP** : 2 heures d'audio en français (enregistrements du groupe et corpus public), bruit ajouté à niveaux contrôlés, trois systèmes de transcription.
+- **Réussite** : WER par condition et par système, effet de chaque remède avec intervalle de confiance, erreurs sur les termes métier, coût et latence.
+- **Extensions** : transcription en flux, langues régionales, repérage automatique des passages peu fiables.
+- **Faisabilité** : services whisper-api et stt du cours, API en complément ; budget cible inférieur à 4 €. Plan B : Whisper local sur CPU avec un modèle réduit.
+
+**CoursIA** : [Whisper (API)](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Audio/01-Foundation/01-2-OpenAI-Whisper-STT.ipynb) · [Whisper local](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Audio/01-Foundation/01-4-Whisper-Local.ipynb) · [Multi-Model Audio Comparison](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Audio/03-Orchestration/03-1-Multi-Model-Audio-Comparison.ipynb)
+
+**Références** : [Whisper](https://arxiv.org/abs/2212.04356) · [Common Voice](https://arxiv.org/abs/1912.06670) · [jiwer (WER)](https://github.com/jitsi/jiwer)
 
 ---
 
@@ -396,6 +516,21 @@ Monter automatiquement des rushes bruts en séquence regardable : sélection des
 
 **Références** : [FFmpeg](https://ffmpeg.org/documentation.html) · [PySceneDetect](https://www.scenedetect.com/) · [P.1203](https://www.itu.int/rec/T-REC-P.1203)
 
+### E6 — Recherche sémantique dans une vidéothèque
+
+**Difficulté : 3/5** · Mots-clés : `video-retrieval`, `embeddings`, `transcripts`, `recall`
+
+Retrouver le bon passage d'une collection de vidéos à partir d'une question en langage naturel, en combinant images, transcription et descriptions générées. Le verrou technique est la mesure de l'apport de chaque modalité sur des requêtes annotées, là où E2 évalue la compréhension d'une seule vidéo.
+
+- **MVP** : 30 vidéos publiques (cours, conférences, tutoriels), index par segments (images clés, transcription, légendes), 100 requêtes avec le segment attendu.
+- **Réussite** : rappel à 5 et MRR selon les modalités combinées, précision temporelle du segment retrouvé, coût d'indexation par heure de vidéo.
+- **Extensions** : questions qui exigent deux segments, mise à jour incrémentale de l'index, interface de navigation.
+- **Faisabilité** : embeddings et transcription locaux ou par API ; budget cible inférieur à 6 €. Plan B : index sur la transcription seule.
+
+**CoursIA** : [Qwen-VL Video Analysis](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Video/01-Foundation/01-3-Qwen-VL-Video-Analysis.ipynb) · [RAG visuel](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/RAG-et-Memoire-Semantique/10-RAG-Visuel-Embedding-Conjoint.ipynb) · [Moteurs vectoriels comparés](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/RAG-et-Memoire-Semantique/05c-Moteurs-Vectoriels-Compares.ipynb)
+
+**Références** : [CLIP](https://arxiv.org/abs/2103.00020) · [CLIP4Clip](https://arxiv.org/abs/2104.08860) · [Whisper](https://arxiv.org/abs/2212.04356)
+
 ---
 
 ## F — Plateformes conversationnelles et mise en production
@@ -460,6 +595,21 @@ Construire un assistant de support qui répond aux questions couvertes et escala
 
 **Références** : [Banking77](https://huggingface.co/datasets/banking77) · [Rasa — Dialogue Management](https://rasa.com/docs/rasa/dialogue-management/) · [Bot Framework — Human Handoff](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-handoff-human?view=azure-bot-service-4.0)
 
+### F6 — Cache sémantique : économies et fausses réponses
+
+**Difficulté : 3/5** · Mots-clés : `semantic-cache`, `cost`, `latency`, `embeddings`
+
+Placer un cache sémantique devant un assistant pour réutiliser les réponses à des questions voisines, et mesurer ce qu'il fait gagner et ce qu'il fait perdre. Le verrou technique est le seuil de similarité : trop bas, le cache sert la réponse d'une autre question ; trop haut, il n'économise rien.
+
+- **MVP** : journal de 1 000 questions réalistes avec paraphrases et quasi-doublons piégés, cache à embeddings, assistant de référence sans cache.
+- **Réussite** : part des réponses servies par le cache, part des réponses fausses servies par le cache, économies de coût et de latence, courbe selon le seuil.
+- **Extensions** : invalidation quand les sources changent, cache par utilisateur, seuil appris.
+- **Faisabilité** : API texte et embeddings ; budget cible inférieur à 5 €. Plan B : embeddings locaux et réponses pré-générées.
+
+**CoursIA** : [Production : caches](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/09d_Production_Caches.ipynb) · [Production Patterns](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/09_Production_Patterns.ipynb) · [Stockage vectoriel](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/RAG-et-Memoire-Semantique/05-Stockage-Vectoriel.ipynb)
+
+**Références** : [GPTCache](https://github.com/zilliztech/GPTCache) · [Sentence-BERT](https://arxiv.org/abs/1908.10084)
+
 ---
 
 ## G — Ingénierie logicielle assistée par IA
@@ -523,6 +673,21 @@ Migrer une petite bibliothèque entre langages ou frameworks avec un assistant, 
 **CoursIA** : [CSharpRepl Live Patching](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Vibe-Coding/docs/CSharpRepl-Live-Patching.ipynb) · [Code Interpreter](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/07_Code_Interpreter.ipynb)
 
 **Références** : [Hypothesis](https://hypothesis.readthedocs.io/) · [Differential Testing for Software](https://dblp.org/rec/journals/dtj/McKeeman98.html) · [Microsoft — Migration guidance](https://learn.microsoft.com/en-us/dotnet/core/porting/)
+
+### G5 — Tests unitaires générés, évalués par mutation
+
+**Difficulté : 3/5** · Mots-clés : `test-generation`, `mutation-testing`, `coverage`, `coding-agents`
+
+Faire générer des tests unitaires par un LLM ou un agent de code pour une bibliothèque existante, puis mesurer s'ils détectent vraiment des bugs. Le verrou technique est le score de mutation : la couverture de lignes ne suffit pas, un test qui n'échoue jamais ne prouve rien.
+
+- **MVP** : deux petites bibliothèques open source, tests générés selon deux approches (prompt simple, agent qui exécute et corrige), outil de mutation.
+- **Réussite** : score de mutation, couverture, tests faux ou instables, coût par mutant détecté, comparaison avec les tests existants du projet.
+- **Extensions** : génération guidée par les mutants survivants, tests de propriétés, autre langage.
+- **Faisabilité** : Python et un outil de mutation ; budget cible inférieur à 8 €. Plan B : modèle local et une seule bibliothèque.
+
+**CoursIA** : [Claude Code : agents](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Vibe-Coding/Claude-Code/notebooks/04-Claude-CLI-Agents.ipynb) · [Claude Code : automatisation](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Vibe-Coding/Claude-Code/notebooks/05-Claude-CLI-Automatisation.ipynb) · [Code Interpreter](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/07_Code_Interpreter.ipynb)
+
+**Références** : [LLM et génération de tests unitaires](https://arxiv.org/abs/2302.06527) · [mutmut](https://github.com/boxed/mutmut)
 
 ---
 
@@ -667,6 +832,51 @@ Combiner ou router de petits modèles spécialisés sans perdre leurs compétenc
 
 **Références** : [MergeKit](https://github.com/arcee-ai/mergekit) · [TIES-Merging](https://arxiv.org/abs/2306.01708) · [PEFT](https://huggingface.co/docs/peft/)
 
+### I5 — Distillation d'un grand modèle vers un petit
+
+**Difficulté : 4/5** · Mots-clés : `distillation`, `synthetic-data`, `fine-tuning`, `cost`
+
+Faire produire par un grand modèle des exemples d'entraînement, puis adapter un petit modèle ouvert sur une tâche précise et mesurer quelle part de l'écart il comble. Le verrou technique est la comparaison honnête entre élève et maître sur un jeu de test indépendant des données générées, avec le coût total de chaque option.
+
+- **MVP** : une tâche bornée (classification, extraction ou reformulation), 2 000 exemples générés par le maître, adaptation LoRA d'un modèle de 0,5 à 3 milliards de paramètres.
+- **Réussite** : performance de l'élève, du maître et du petit modèle non adapté sur le test, effet de la taille du jeu généré, coût d'inférence comparé, contrôle de fuite entre génération et test.
+- **Extensions** : raisonnements du maître comme supervision, filtrage des exemples générés, élève quantifié.
+- **Faisabilité** : API pour le maître, GPU gratuit (Colab ou Kaggle) pour l'élève ; budget cible inférieur à 8 €. Plan B : élève plus petit entraîné sur CPU.
+
+**CoursIA** : [LoRA from scratch](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/FineTuning/FT-00a-LoRA-from-scratch-Python.ipynb) · [QLoRA](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/FineTuning/FT-02-QLoRA-Quantization-Python.ipynb) · [SFT](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/FineTuning/FT-03-Supervised-FineTuning-SFT-Python.ipynb)
+
+**Références** : [Distilling Step-by-Step](https://arxiv.org/abs/2305.02301) · [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531)
+
+### I6 — Alignement par préférences (DPO) à petite échelle
+
+**Difficulté : 4/5** · Mots-clés : `dpo`, `preference-data`, `alignment`, `evaluation`
+
+Construire un jeu de préférences (réponse préférée, réponse rejetée) pour un comportement précis, comme la concision, le ton ou le respect d'un format, puis aligner un petit modèle par DPO. Le verrou technique est de montrer que le comportement visé change sur des requêtes nouvelles sans dégrader le reste.
+
+- **MVP** : 1 000 paires de préférences générées puis filtrées, un petit modèle ouvert, entraînement DPO et évaluation avant et après.
+- **Réussite** : taux de victoire contre le modèle de départ (juge automatique validé sur un échantillon humain), mesure dédiée au comportement visé, régression sur un jeu de contrôle.
+- **Extensions** : comparaison SFT contre DPO, sensibilité à la qualité des paires, biais du juge.
+- **Faisabilité** : GPU gratuit (Colab ou Kaggle), API pour générer et juger ; budget cible inférieur à 8 €. Plan B : modèle plus petit et 300 paires.
+
+**CoursIA** : [RLHF et DPO](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/FineTuning/FT-04-RLHF-DPO-Python.ipynb) · [DPO](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/PostTraining/PT_03_dpo_direct_preference.ipynb) · [Évaluation comparative](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/PostTraining/PT_06_eval_comparative.ipynb)
+
+**Références** : [DPO](https://arxiv.org/abs/2305.18290) · [TRL](https://github.com/huggingface/trl)
+
+### I7 — Post-training par récompenses vérifiables
+
+**Difficulté : 5/5** · Mots-clés : `rlvr`, `grpo`, `post-training`, `reasoning`
+
+Améliorer un petit modèle par apprentissage par renforcement sur une tâche dont la réponse se vérifie automatiquement (calcul, énigmes, format strict). Le verrou technique est un gain mesuré sur des problèmes nouveaux, avec des contrôles qui écartent les gains de façade ; H3 étudie au contraire la façon dont le modèle exploite la récompense.
+
+- **MVP** : générateur de problèmes vérifiables à plusieurs niveaux de difficulté, petit modèle ouvert, entraînement GRPO court, évaluation sur des problèmes tenus à l'écart.
+- **Réussite** : précision avant et après par difficulté, longueur des réponses, contrôle des raccourcis (format correct sans raisonnement), plusieurs graines, courbe gain et calcul.
+- **Extensions** : comparaison avec un SFT sur solutions, récompense partielle, transfert à une tâche voisine.
+- **Faisabilité** : GPU nécessaire (Colab ou Kaggle gratuits) ; aucun coût d'API. Plan B : environnement jouet des carnets PT_08 à PT_10.
+
+**CoursIA** : [RLVR](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/PostTraining/PT_05_rlvr_verifiable_rewards.ipynb) · [GRPO sur environnement jouet](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/PostTraining/PT_08_grpo_from_scratch_toy_env.ipynb) · [GRPO sur Qwen](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/PostTraining/PT_11c_grpo_qwen17_rlvr.ipynb)
+
+**Références** : [DeepSeekMath (GRPO)](https://arxiv.org/abs/2402.03300) · [Tülu 3 (RLVR)](https://arxiv.org/abs/2411.15124)
+
 ---
 
 ## J — Données, science et aide à la décision
@@ -810,6 +1020,36 @@ Mesurer puis réduire les ressources consommées par une tâche GenAI sans dégr
 
 **Références** : [CodeCarbon](https://mlco2.github.io/codecarbon/) · [MLCO2 Impact](https://mlco2.github.io/impact/) · [Green Algorithms](https://www.green-algorithms.org/)
 
+### K2-e — Respect des réserves de fouille de textes et de données
+
+**Difficulté : 2/5** · Mots-clés : `tdm`, `opt-out`, `crawling`, `data-governance`
+
+Collecter un petit corpus web en respectant les signaux par lesquels les éditeurs refusent la fouille par l'IA (robots.txt, en-têtes, protocole TDMRep), puis auditer un jeu de données existant. Le verrou technique est la détection fiable de ces réserves et la mesure de leur couverture, là où K2 trace les licences d'une chaîne de génération.
+
+- **MVP** : collecteur qui lit et applique les réserves, échantillon de 300 sites, journal d'audit de chaque document gardé ou écarté.
+- **Réussite** : taux de détection des réserves sur un échantillon vérifié à la main, divergences entre signaux, part d'un jeu public qui aurait dû être écartée, reproductibilité de l'audit.
+- **Extensions** : suivi des réserves dans le temps, rapport par domaine, export vers un manifeste de provenance.
+- **Faisabilité** : Python et requêtes web limitées ; aucun GPU, pas d'API payante. Plan B : instantanés de pages déjà collectés.
+
+**CoursIA** : [PDF et recherche web](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/06_PDF_Web_Search.ipynb) · [Production Patterns](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/09_Production_Patterns.ipynb)
+
+**Références** : [TDMRep (W3C)](https://www.w3.org/community/tdmrep/) · [Consent in Crisis](https://arxiv.org/abs/2407.14933)
+
+### K4 — Anonymisation de documents mesurée
+
+**Difficulté : 3/5** · Mots-clés : `anonymization`, `pii`, `privacy`, `ner`
+
+Retirer les données personnelles de documents (courriers, comptes rendus, tickets) avec un LLM, un outil à règles et leur combinaison, puis mesurer ce qui fuit encore. Le verrou technique est le rappel sur les données personnelles et la ré-identification résiduelle, sans détruire l'utilité du document, là où K1 génère des données synthétiques.
+
+- **MVP** : 100 documents publics ou fabriqués, données personnelles annotées, trois approches d'anonymisation, mesure de l'utilité restante.
+- **Réussite** : rappel et précision par type de donnée, tentatives de ré-identification sur les documents anonymisés, perte d'information utile mesurée par questions-réponses.
+- **Extensions** : pseudonymisation cohérente sur plusieurs documents, documents scannés, conformité à une politique écrite.
+- **Faisabilité** : API texte ou modèle local, Presidio ; budget cible inférieur à 5 €. Aucune donnée personnelle réelle n'est envoyée à une API. Plan B : modèle local seul.
+
+**CoursIA** : [Structured Outputs](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/03_Structured_Outputs.ipynb) · [Evaluating Generated Text](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/22_Evaluating_Generated_Text.ipynb) · [Prompt Security](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/09b_Prompt_Security_RedTeam.ipynb)
+
+**Références** : [Text Anonymization Benchmark (TAB)](https://arxiv.org/abs/2202.00443) · [Presidio](https://github.com/microsoft/presidio)
+
 ---
 
 ## L — Applications sectorielles évaluables
@@ -873,6 +1113,21 @@ Adapter explications et exercices à un modèle explicite de maîtrise, sans se 
 **CoursIA** : [Educational Content Generation](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Image/04-Applications/04-1-Educational-Content-Generation.ipynb) · [NotebookMaker](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/SemanticKernel/10-SemanticKernel-NotebookMaker.ipynb)
 
 **Références** : [Knowledge Tracing](https://dl.acm.org/doi/10.5555/1161135.1161179) · [UNESCO guidance for generative AI in education](https://unesdoc.unesco.org/ark:/48223/pf0000386693) · [Bloom's taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/)
+
+### L4 — Descriptions d'images pour l'accessibilité
+
+**Difficulté : 3/5** · Mots-clés : `accessibility`, `alt-text`, `vlm`, `evaluation`
+
+Générer automatiquement les textes alternatifs des images d'un site ou d'un cours, adaptés à leur contexte, et vérifier qu'ils servent vraiment une personne qui utilise un lecteur d'écran. Le verrou technique est l'évaluation : exactitude, utilité dans le contexte et absence d'invention, mesurées contre des descriptions de référence et une relecture humaine.
+
+- **MVP** : 200 images en contexte (pages web, diapositives), consignes WCAG traduites en critères vérifiables, deux VLM, grille de relecture.
+- **Réussite** : part des descriptions exactes et utiles selon la relecture, détails inventés, longueur adaptée, accord entre relecteurs, coût par image.
+- **Extensions** : description de graphiques et de schémas, test avec un lecteur d'écran, intégration dans un CMS.
+- **Faisabilité** : API vision ; budget cible inférieur à 5 €. Plan B : petit VLM local.
+
+**CoursIA** : [Vision-Language LoRA](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/FineTuning/FT-06-Vision-Language-LoRA-Python.ipynb) · [Evaluating Generated Text](https://github.com/jsboige/CoursIA/blob/main/MyIA.AI.Notebooks/GenAI/Texte/22_Evaluating_Generated_Text.ipynb)
+
+**Références** : [VizWiz](https://arxiv.org/abs/1802.08218) · [CLIPScore](https://arxiv.org/abs/2104.08718) · [Images accessibles (W3C WAI)](https://www.w3.org/WAI/tutorials/images/)
 
 ---
 
