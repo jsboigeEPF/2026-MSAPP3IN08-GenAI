@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-27T17:52:42Z",
+  "python_version": "3.12.14",
+  "textstat_version": "0.7.13",
+  "corpus_sha256": "9c1a7af55b3fec7ded9f334f8a52cd793f57c2a5baa86eee9579fab815350b45",
+  "prompts_sha256": "bb058504f98517cfd38fc2b4c5413b633c0dad47cb3e41f52e9e7cab8f2d8f13",
+  "successful_unique_requests": 120,
+  "stored_successful_requests_cost_usd": 0.0407855104,
+  "generator": "qwen/qwen3.8-flash",
+  "judge": "deepseek/deepseek-v4.1-flash",
+  "temperatures": 0,
+  "openrouter_reasoning_effort": "none",
+  "frozen_protocol": "docs/PROTOCOLE.md",
+  "human_validation": "pending",
+  "source_hashes": {
+    "src/a6/pipeline.py": "aef67d232724883caf4d3b206d04df128addc39d519833ec050dccc61fbc7e6c",
+    "src/a6/server.py": "66f252dac2aa1c94399908b4cd631ad0cefde1a5943507e35b837bceed36b55f",
+    "src/a6/report.py": "323dfd916a540262782ddbcc1335dbbb31cdbc2dc385b2f77d6769dc811af2da",
+    "src/a6/engine.py": "b0b1ff20e941d76377a21fd3f62b8fcb716d9a1d93f789f50af70fb240b03849",
+    "src/a6/metrics.py": "bcc25cfa990f978379ad9d20a8cd5eda887e4d18a0525aa289f391014c620ec7",
+    "src/a6/prompts.py": "bb058504f98517cfd38fc2b4c5413b633c0dad47cb3e41f52e9e7cab8f2d8f13",
+    "src/a6/__main__.py": "df17fb3b04b3af387539a43afbee565d1cd1c8ee60e1d7f0d674b63928dbb9fb",
+    "src/a6/corpus.py": "1ac4c1269fd409394932cbd866933455f9e83f6a856c7be88d1f52867a7c0e12",
+    "src/a6/__init__.py": "1704808341ba7275fcdec95a0a79182e09fc513c15cf0027e7eb2dd09e98a672"
+  }
+}

@@ -1,0 +1,7 @@
+Vérification locale du serveur, exécutée dans un sous-processus Python propre :
+- Démarrage sur 127.0.0.1:8766 : OK.
+- GET /api/data : HTTP 200, 40 textes chargés.
+- GET /results/../../.env : HTTP 404.
+- GET /.env : HTTP 404.
+- POST /api/run sans jeton de session : HTTP 403.
+Aucun appel au modèle effectué par ce contrôle HTTP.
