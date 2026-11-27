@@ -23,10 +23,12 @@ import requests
 API = "https://commons.wikimedia.org/w/api.php"
 UA = "temporal-video-bench/0.1 (educational benchmark; python-requests)"
 # Catégories choisies pour leur richesse temporelle (ordre, comptage, causalité, détails brefs)
+# Critère de sélection : de préférence objets, animaux, véhicules ou mains (pas d'enfants ni de personnes
+# filmées en gros plan) — scènes riches en événements temporels et sans donnée personnelle de tiers.
 DEFAULT_CATS = [
-    "Videos of juggling", "Videos of cooking", "Videos of dominoes", "Videos of billiards",
-    "Videos of basketball", "Videos of trains", "Videos of traffic", "Videos of experiments",
-    "Videos of dogs", "Videos of birds",
+    "Videos of billiards", "Videos of chemical reactions", "Videos of pendulums", "Videos of trams",
+    "Videos of cats", "Videos of horses", "Videos of fish", "Videos of airplanes", "Videos of chess",
+    "Videos of table tennis", "Videos of cooking", "Videos of trains", "Videos of birds", "Videos of dogs",
 ]
 OK_LICENSES = re.compile(r"^(CC0|CC BY|CC BY-SA|Public domain)", re.I)
 
@@ -107,7 +109,9 @@ def videos_in_category_html(session, cat: str, limit: int):
         if not OK_LICENSES.match(lic) or not (5 <= dur <= 300):
             continue
         srcs = re.findall(r'<source src="([^"]+)"[^>]*data-transcodekey="([^"]+)"', fp)
-        pick = [u for u, k in srcs if k.startswith(("480p", "360p")) and k.endswith("webm")] or [u for u, _ in srcs]
+        files_only = [(u, k) for u, k in srcs if not u.endswith((".mpd", ".m3u8"))]  # pas de flux segmentés
+        pick = ([u for u, k in files_only if k.startswith(("480p", "360p")) and k.endswith("webm")]
+                or [u for u, k in files_only if k.endswith(("webm", "mov", "mp4"))])
         if not pick:
             continue
         aut = re.search(r'id="fileinfotpl_aut".*?</td>\s*<td[^>]*>(.*?)</td>', fp, re.S)
