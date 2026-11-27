@@ -1,12 +1,12 @@
-# tvbench — Benchmark de compréhension temporelle vidéo
+# Les Provinciaux — tvbench, benchmark de compréhension temporelle vidéo
 
 ## Groupe
 
 | Membre | Contribution principale |
 |---|---|
-| @à-compléter | À compléter |
-| @à-compléter | À compléter |
-| @à-compléter | À compléter |
+| @Leo-Bnvl | À compléter |
+| @rouautu | À compléter |
+| Troisième membre (sans compte GitHub) | À compléter |
 
 Contribution d'un agent de code déclarée : le squelette du harnais (échantillonnage, adaptateurs, métriques,
 corpus contrôlé, tests) a été écrit avec l'assistance de Claude Code, puis relu par le groupe.
