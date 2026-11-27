@@ -15,7 +15,7 @@
  ],
  "counting": [
   "Clignotements de 0,35–0,6 s, frames espacées de 0,625 s : une partie des événements n'est jamais vue.",
-  "COUNTING32_SLIDE"
+  "32 frames au lieu de 16 : comptage <b>0,18–0,37 → 0,35–0,48</b>, moins de sous-comptage — mais plus de la moitié des comptes restent faux."
  ],
  "blind": [
   "Sans image : <b>0,29–0,30</b> sur le contrôlé (≈ hasard) mais <b>0,48–0,60</b> sur le réel.",

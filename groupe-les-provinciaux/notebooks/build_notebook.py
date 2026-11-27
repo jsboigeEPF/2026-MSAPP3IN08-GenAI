@@ -221,7 +221,25 @@ if p32.exists():
         return int(q["options"]["ABCD".index(row.pred)]) - int(q["options"]["ABCD".index(q["answer"])])
     t["ecart"] = t.apply(signed, axis=1)
     print("Écart moyen (prédit − vrai) :"); display(t.groupby(["model", "cfg"]).ecart.mean().unstack().round(2))"""),
-md("## 10. Conclusions"),
+md("""## 10. Conclusions
+
+*Rédigées à partir des résultats de la campagne du 27/11/2026 — à reformuler par le groupe.*
+
+1. **Sélection adaptative.** C'est l'extension la plus rentable : à coût égal (16 frames), elle porte l'exactitude
+   « détail fugitif » du corpus contrôlé de 0,57–0,73 à 1,00, parce que la preuve passe de 60 % à 100 % de couverture.
+   Les erreurs sur les détails brefs sont donc surtout des erreurs de **perception** dues à l'échantillonnage.
+2. **Comptage.** C'est la catégorie la plus faible (0,18–0,37 à 16 frames, proche du hasard). Doubler les frames
+   aide (0,35–0,48) et réduit le sous-comptage, sans résoudre le problème : les modèles peinent à suivre un même
+   objet d'une frame à l'autre.
+3. **Validité du corpus réel.** La baseline sans image montre que 28 questions réelles sur 80 se devinent : les scores
+   réels (≈ 0,9) surestiment la compréhension. Le corpus contrôlé, au niveau du hasard sans image, est la mesure la
+   plus fiable. Priorité : réécrire les questions réelles devinables avec des distracteurs plausibles.
+4. **Stabilité.** Une reformulation change la réponse dans 30 à 50 % des questions du corpus contrôlé : une seule
+   formulation par question donnerait une image trop optimiste et bruitée. `robust_acc` est la métrique à retenir.
+5. **Coût.** 1,74 € pour l'ensemble des campagnes. Qwen 3.8-27B obtient des résultats comparables à Gemini 3.5
+   Flash-Lite pour un coût huit fois plus faible ; le petit Qwen 3.5-9B reste proche, ce qui rend crédible un
+   déploiement local.
+"""),
 ]
 nb = nbf.v4.new_notebook(cells=cells, metadata={"kernelspec": {"name": "python3", "display_name": "Python 3", "language": "python"}})
 nbf.write(nb, str(Path(__file__).resolve().parent / "analyse_resultats.ipynb"))

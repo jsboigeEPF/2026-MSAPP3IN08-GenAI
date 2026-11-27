@@ -25,6 +25,7 @@ humains ([`docs/VERIFICATION-ANNOTATIONS.md`](docs/VERIFICATION-ANNOTATIONS.md))
   et Qwen 3.8-27B), un troisième plus petit (Qwen 3.5-9B, taille exécutable en local) et une baseline aléatoire.
 - **Extensions réalisées :** sélection adaptative de frames ; troisième modèle de petite taille ; baseline « aveugle »
   (questions posées sans image) ; test du comptage à 32 frames.
+- **Notebook d'analyse** : [`notebooks/analyse_resultats.ipynb`](notebooks/analyse_resultats.ipynb) · **slides** : [`slides/soutenance.pdf`](slides/soutenance.pdf).
 
 ## Architecture
 
@@ -155,7 +156,9 @@ environ ±6 points par modèle et ±12 points par catégorie.
    0,57–0,73 à **1,00** pour les trois modèles (+8 à +19 points au global). Sur le corpus réel, le gain est plus
    faible (+1 à +7 points) : les événements y sont moins brefs et les questions plus faciles (point 3).
 2. **Le comptage est la faiblesse commune.** Les clignotements durent 0,35–0,6 s alors que 16 frames sur 10 s sont
-   espacées de 0,625 s : une partie des événements n'est jamais vue. COUNTING32
+   espacées de 0,625 s : une partie des événements n'est jamais vue. Avec **32 frames**, le comptage passe à **0,35–0,48** et le
+   sous-comptage moyen diminue (Gemini : écart moyen prédit − vrai de −0,54 à −0,09). Le problème est donc en partie
+   de **perception**, mais pas seulement : même à 32 frames, plus de la moitié des comptes restent faux.
 3. **Le corpus réel est trop facile, et en partie devinable sans la vidéo.** Posées **sans aucune image**, les
    questions réelles obtiennent 0,48 (Gemini) et 0,60 (Qwen-27B), contre 0,29–0,30 sur le corpus contrôlé.
    28 questions sur 80 sont réussies à l'aveugle par les deux modèles (liste dans
@@ -167,7 +170,7 @@ environ ±6 points par modèle et ±12 points par catégorie.
    questions, contre 54–64 % d'exactitude moyenne. Corpus réel : 80–94 % de cohérence.
 5. **Biais de lettre.** Sur le comptage contrôlé, Qwen 3.5-9B répond « D » dans 52–57 % des cas ; Gemini évite « A ».
    La lettre la plus prédite représente 0,27–0,43 des réponses selon les configurations (0,25 sans biais).
-6. **Coût et latence.** Ensemble des campagnes (≈ 3 400 appels API) : **1,55 €** au total, bien sous le budget de 12 €.
+6. **Coût et latence.** Ensemble des campagnes (≈ 3 400 appels API) : **1,74 €** au total, bien sous le budget de 12 €.
    Pour 100 questions : Gemini 0,12 €, Qwen-27B 0,015 €, Qwen-9B 0,025 €. Latence médiane 1,0–1,4 s, p95 1,9–2,7 s.
    Qwen 3.8-27B offre le meilleur rapport exactitude/coût (8 fois moins cher que Gemini pour une exactitude
    comparable).

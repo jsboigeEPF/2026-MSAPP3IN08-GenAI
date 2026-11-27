@@ -127,14 +127,15 @@ def build():
                    "<div>models.py<br><small>OpenRouter · Ollama<br>transformers · hasard</small></div><span>→</span>"
                    "<div>metrics.py<br><small>IC Wilson, stabilité<br>coût, latence</small></div></div>"
                    + bullets(["Adaptatif : moitié des frames uniformes + pics de différence entre images consécutives.",
-                              "17 tests automatisés (parsing, échantillonnage, adaptateur API contre un faux serveur, coûts, .env).",
+                              "18 tests automatisés (parsing, échantillonnage, adaptateur API contre un faux serveur, coûts, .env).",
                               "Tout est rejouable sans réseau : résultats bruts versionnés, notebook hors-ligne."])))
     S.append(slide("Modèles", bullets([
         "<b>Gemini 3.5 Flash-Lite</b> (API propriétaire) · <b>Qwen 3.8-27B</b> (poids ouverts) · "
         "<b>Qwen 3.5-9B</b> (taille exécutable en local) · <b>hasard</b>.",
         "Imposé par l'espace OpenRouter du cours : GPT-5 et Qwen-VL y sont <b>bloqués</b> (garde-fou, HTTP 404).",
         "Qwen appelé <b>sans raisonnement</b> : sinon il épuise ses tokens et renvoie une réponse vide.",
-        f"Campagne : <b>{n_calls} appels</b>, coût réel facturé <b>{total:.2f} €</b>."])))
+        f"Campagnes principales (2 corpus × 2 stratégies) : <b>{n_calls} appels</b>, coût réel facturé "
+        f"<b>{total:.2f} €</b>".replace(".", ",") + " ; 1,74 € avec les contrôles (sans image, 32 frames)."])))
     S.append(slide("Exactitude par catégorie", img("accuracy_by_category.png") + kp("accuracy", [])))
     for corpus in ["contrôlé", "réel"]:
         t = acc_table(df, corpus)
@@ -150,6 +151,7 @@ def build():
     S.append(slide("Coût et latence", table(cost_table(df)) + img("cost_vs_accuracy.png")))
     S.append(slide("Limites", kp("limits", [
         "Annotations du corpus réel rédigées avec l'aide d'un agent, à <b>vérifier par le groupe</b> (accord inter-annotateurs).",
+        "28 questions réelles sur 80 se devinent sans image : à réécrire avec des distracteurs plausibles.",
         "80 questions par corpus : écarts &lt; 10 points non significatifs.",
         "Catégories non parfaitement équilibrées sur le corpus réel (17 questions « détail fugitif »).",
         "Les modèles ne voient que 16 images : pas d'audio, pas de vidéo native.",
@@ -158,7 +160,7 @@ def build():
         "<code>python -m tvbench.run … --models random</code> : chaîne complète sans clé ni réseau.",
         "Frames en cache et résultats bruts versionnés : le notebook se rejoue hors-ligne.",
         "3<sup>e</sup> modèle réellement local : Ollama <code>qwen2.5vl:7b</code> (configuré, à lancer sur un PC).",
-        "Suite : vérification humaine des annotations, courbe exactitude / nombre de frames (8-16-32)."])))
+        "Suite : vérification humaine et réécriture des questions réelles, courbe exactitude / nombre de frames (8-16-32)."])))
     css = """
     @page { size: 1280px 720px; margin: 0 }
     body { margin: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1d2433; }
