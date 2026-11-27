@@ -144,6 +144,8 @@ def build():
     S.append(slide("Uniforme ou adaptatif ?", img("adaptive_gain.png") + kp("adaptive", [])))
     S.append(slide("Perception ou compréhension ?", img("perception_vs_comprehension.png")
                    + bullets([f"Part des questions fugitives où une frame contient la preuve — {cov_txt}."] + KEY_POINTS.get("perception", []))))
+    S.append(slide("Comptage : un problème de perception ?", img("counting_frames.png") + kp("counting", [])))
+    S.append(slide("Contrôle : les questions sans la vidéo", img("blind_baseline.png") + kp("blind", [])))
     S.append(slide("Stabilité aux reformulations", img("stability.png") + kp("stability", [])))
     S.append(slide("Coût et latence", table(cost_table(df)) + img("cost_vs_accuracy.png")))
     S.append(slide("Limites", kp("limits", [
