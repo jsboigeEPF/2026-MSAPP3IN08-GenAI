@@ -25,12 +25,15 @@ def wilson(k: int, n: int, z: float = 1.96) -> tuple[float, float]:
     return (max(0.0, c - h), min(1.0, c + h))
 
 
+FRAME_SPAN = 0.1  # les frames sont décodées à 10 images/s : chacune couvre [t, t + 0,1 s)
+
+
 def evidence_seen(row) -> bool:
-    """Au moins une frame échantillonnée tombe-t-elle dans la fenêtre de preuve ?"""
+    """Au moins une frame échantillonnée chevauche-t-elle la fenêtre de preuve ?"""
     ev = row.get("evidence")
     if not ev:
         return True
-    return any(ev[0] <= t <= ev[1] for t in row["frame_times"])
+    return any(t + FRAME_SPAN > ev[0] and t <= ev[1] for t in row["frame_times"])
 
 
 def summarize(df: pd.DataFrame) -> pd.DataFrame:

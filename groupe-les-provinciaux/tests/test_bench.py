@@ -116,3 +116,10 @@ def test_cost_prefers_billed_cost():
     cfg = ModelConfig(name="x", kind="openai_compat", price_in_eur_per_mtok=1000.0)
     assert cfg.cost_eur(Reply("A", 1.0, input_tokens=10, cost_usd=0.01)) == 0.01 * cfg.eur_per_usd
     assert cfg.cost_eur(Reply("A", 1.0, input_tokens=10)) == 10 * 1000.0 / 1e6
+
+
+def test_evidence_seen_uses_frame_span():
+    from tvbench.metrics import evidence_seen
+    assert evidence_seen({"evidence": [7.45, 7.73], "frame_times": [7.4]})      # frame [7,40 ; 7,50) chevauche
+    assert not evidence_seen({"evidence": [7.45, 7.73], "frame_times": [7.3, 7.8]})
+    assert evidence_seen({"evidence": None, "frame_times": []})
