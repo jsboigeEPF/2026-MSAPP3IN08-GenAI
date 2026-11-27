@@ -124,6 +124,39 @@ def videos_in_category_html(session, cat: str, limit: int):
     return out
 
 
+def download(session, url: str, dest: Path, max_seconds: float):
+    tmp = dest.with_suffix(".src")
+    try:
+        for attempt in range(5):
+            with session.get(url, stream=True, timeout=300) as r:
+                if r.status_code == 429 and attempt < 4:
+                    time.sleep(30 * (attempt + 1))
+                    continue
+                r.raise_for_status()
+                with open(tmp, "wb") as f:
+                    for chunk in r.iter_content(1 << 16):
+                        f.write(chunk)
+                break
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(tmp), "-t", str(max_seconds), "-an",
+                        "-vf", "scale='min(640,iw)':-2", "-c:v", "libx264", "-crf", "23", str(dest)], check=True)
+    finally:
+        tmp.unlink(missing_ok=True)
+
+
+def redownload(session, manifest: Path, out: Path, max_seconds: float):
+    """Reconstitue le corpus réel à l'identique (mêmes identifiants de clips) à partir du manifeste versionné."""
+    out.mkdir(parents=True, exist_ok=True)
+    for row in csv.DictReader(open(manifest)):
+        if row.get("selected", "oui") != "oui":
+            continue
+        dest = out / f"{row['clip']}.mp4"
+        if dest.exists():
+            continue
+        print(f"{row['clip']}  {row['license']}  {row['title']}", flush=True)
+        download(session, row["url"], dest, max_seconds)
+        time.sleep(1)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--out", type=Path, default=Path("data/real/clips"))
@@ -131,10 +164,14 @@ def main():
     ap.add_argument("--per-category", type=int, default=2)
     ap.add_argument("--max-seconds", type=float, default=30)
     ap.add_argument("--html", action="store_true", help="lire les pages web au lieu de l'API (si l'API renvoie 429)")
+    ap.add_argument("--from-manifest", type=Path, default=None,
+                    help="retélécharger exactement les clips retenus d'un manifeste (ex. data/real/manifest.csv)")
     a = ap.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
     s = requests.Session()
     s.headers["User-Agent"] = UA
+    if a.from_manifest:
+        return redownload(s, a.from_manifest, a.out, a.max_seconds)
     man = a.out / "manifest.csv"
     fields = ["clip", "category", "title", "url", "page", "duration", "license", "license_url", "author"]
     if not man.exists():

@@ -30,3 +30,4 @@ data/frames/
 data/real/clips/
 data/synthetic/clips/
 results/essai.jsonl
+data/real/*.sheet.jpg
