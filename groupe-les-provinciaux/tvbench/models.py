@@ -27,6 +27,7 @@ class Reply:
     input_tokens: int = 0
     output_tokens: int = 0
     error: str | None = None
+    cost_usd: float | None = None   # coût réel renvoyé par certaines API (OpenRouter : usage.cost)
 
 
 @dataclass
@@ -41,9 +42,12 @@ class ModelConfig:
     image_detail: str = "low"
     max_output_tokens: int = 16
     est_input_tokens_per_frame: int = 100       # pour --dry-run uniquement
+    eur_per_usd: float = 0.87
     extra: dict = field(default_factory=dict)   # paramètres passés tels quels (ex. reasoning_effort)
 
     def cost_eur(self, r: Reply) -> float:
+        if r.cost_usd is not None:
+            return r.cost_usd * self.eur_per_usd
         return (r.input_tokens * self.price_in_eur_per_mtok
                 + r.output_tokens * self.price_out_eur_per_mtok) / 1e6
 
@@ -97,11 +101,13 @@ class OpenAICompatModel(VLM):
                     last = f"HTTP {r.status_code}: {r.text[:200]}"
                     time.sleep(2 ** attempt * 2)
                     continue
-                r.raise_for_status()
+                if r.status_code >= 400:  # erreur définitive : garder le message de l'API
+                    return Reply(text="", latency_s=dt, error=f"HTTP {r.status_code}: {r.text[:300]}")
                 d = r.json()
                 u = d.get("usage") or {}
                 return Reply(text=(d["choices"][0]["message"].get("content") or ""), latency_s=dt,
-                             input_tokens=u.get("prompt_tokens", 0), output_tokens=u.get("completion_tokens", 0))
+                             input_tokens=u.get("prompt_tokens", 0), output_tokens=u.get("completion_tokens", 0),
+                             cost_usd=u.get("cost"))
             except Exception as e:  # erreur réseau / JSON
                 last = f"{type(e).__name__}: {e}"
                 time.sleep(2 ** attempt)

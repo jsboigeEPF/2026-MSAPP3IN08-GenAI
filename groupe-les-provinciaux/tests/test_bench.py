@@ -109,3 +109,10 @@ def test_load_dotenv(tmp_path, monkeypatch):
     import os
     assert os.environ["TVB_A"] == "abc" and "TVB_B" not in os.environ
     assert os.environ["TVB_C"] == "x y" and os.environ["TVB_D"] == "env"
+
+
+def test_cost_prefers_billed_cost():
+    from tvbench.models import Reply
+    cfg = ModelConfig(name="x", kind="openai_compat", price_in_eur_per_mtok=1000.0)
+    assert cfg.cost_eur(Reply("A", 1.0, input_tokens=10, cost_usd=0.01)) == 0.01 * cfg.eur_per_usd
+    assert cfg.cost_eur(Reply("A", 1.0, input_tokens=10)) == 10 * 1000.0 / 1e6

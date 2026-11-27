@@ -18,7 +18,7 @@ corpus contrôlé, tests) a été écrit avec l'assistance de Claude Code, puis 
   Comprennent-ils vraiment le *temps* (ordre, comptage, causalité, événements brefs) ? Leurs réponses
   restent-elles stables quand on reformule la question ? À quel coût et avec quelle latence ?
 - **MVP :** corpus libre de 20 clips, 80 questions annotées à choix multiples (4 catégories × 20),
-  deux modèles (GPT-5-mini et Qwen-VL), plus une baseline aléatoire.
+  deux modèles via l'espace OpenRouter du cours (Gemini 3.5 Flash-Lite et Qwen 3.8-27B), un troisième plus petit (Qwen 3.5-9B, taille exécutable en local) et une baseline aléatoire.
 
 ## Architecture
 
@@ -71,10 +71,10 @@ python -m tvbench.synth
 
 # 2. Estimation du coût, puis campagne
 python -m tvbench.run --questions data/synthetic/questions.jsonl --clips data/synthetic/clips \
-    --models random gpt5-mini-or qwen-vl-openrouter --dry-run
+    --models random gemini-flash-lite-or qwen-27b-or qwen-9b-or --dry-run
 for s in uniform adaptive; do
   python -m tvbench.run --questions data/synthetic/questions.jsonl --clips data/synthetic/clips \
-      --models random gpt5-mini-or qwen-vl-openrouter --frames 16 --strategy $s --out results/syn.jsonl
+      --models random gemini-flash-lite-or qwen-27b-or qwen-9b-or --frames 16 --strategy $s --out results/syn.jsonl
 done
 python -m tvbench.metrics results/syn.jsonl --out results/report_synthetic.md
 
@@ -84,10 +84,15 @@ python scripts/annotate_helper.py sheets data/real/clips
 #    -> annoter data/real/questions.jsonl (format : data/real/questions.example.jsonl)
 python scripts/annotate_helper.py validate data/real/questions.jsonl
 python -m tvbench.run --questions data/real/questions.jsonl --clips data/real/clips \
-    --models random gpt5-mini-or qwen-vl-openrouter --out results/real.jsonl
+    --models random gemini-flash-lite-or qwen-27b-or qwen-9b-or --out results/real.jsonl
 ```
 
 Les modèles disponibles sont listés dans `configs/models.toml` (OpenRouter, OpenAI, DashScope, Ollama, transformers).
+
+> **Garde-fou de l'espace OpenRouter du cours.** Seule une liste de modèles est autorisée : GPT-5-mini et
+> Qwen2.5/Qwen3-VL y sont refusés (HTTP 404 « Model blocked by guardrail »). Les modèles vision autorisés
+> au 27/11/2026 sont Gemini 3.5 Flash-Lite et la famille Qwen 3.5/3.8. Les modèles Qwen sont appelés avec
+> `reasoning.enabled = false`, sinon ils épuisent leur budget de tokens à raisonner et renvoient une réponse vide.
 
 ## Tests
 
@@ -130,8 +135,13 @@ Avec un échantillonnage uniforme, aucun modèle ne *peut* répondre à la plupa
 l'information n'est pas dans les frames. La métrique sépare donc les erreurs de **perception** (rien vu)
 des erreurs de **compréhension** (vu, mais mal interprété).
 
-**Résultats des modèles :** à compléter après la campagne. Le coût estimé est d'environ 0,7 € pour les deux modèles
-sur 80 × 3 questions à 16 frames, soit moins de 12 € même en couvrant toutes les configurations.
+**Essai sur 4 questions × 3 formulations (clip `syn00`, 16 frames uniformes) :** aucun appel en erreur et aucune
+réponse non parsable. Latence médiane d'environ 1 s, coût réel de 0,01 à 0,05 € pour 100 questions selon le modèle.
+L'échantillon est trop petit pour comparer les modèles, mais il montre déjà un piège : Gemini répond « C » à toutes
+les questions de ce clip. Il obtient donc 3/3 sur la question fugitive alors qu'aucune frame ne montre le nombre.
+Il faudra contrôler la répartition des lettres prédites.
+
+**Résultats des modèles :** à compléter après la campagne complète, estimée à moins de 1 € pour 3 modèles × 2 stratégies.
 Avec 80 questions, l'IC 95 % fait environ ±10 points : les écarts inférieurs ne sont pas interprétables.
 
 ## Limites et plan B
