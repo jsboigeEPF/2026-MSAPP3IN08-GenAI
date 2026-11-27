@@ -59,8 +59,8 @@ Chaque question existe en **3 formulations** pour mesurer la stabilité.
 
 ```bash
 pip install -r requirements.txt      # Python ≥ 3.11 ; ffmpeg/ffprobe doivent être dans le PATH
-cp .env.example .env                 # renseigner OPENROUTER_API_KEY (clé du cours)
-set -a; . ./.env; set +a             # charger les variables dans le shell
+cp .env.example .env                 # puis renseigner OPENROUTER_API_KEY (clé du cours) dans .env
+# .env est lu automatiquement par tvbench.run (et ignoré par git)
 ```
 
 ## Utilisation

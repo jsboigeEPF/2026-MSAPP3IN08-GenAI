@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import tomllib
 from pathlib import Path
@@ -15,6 +16,20 @@ from pathlib import Path
 from .frames import probe, select_frames
 from .models import ModelConfig, build
 from .prompts import build_prompt, parse_answer
+
+
+def load_dotenv(path: Path = Path(".env")) -> None:
+    """Charge un fichier .env (CLE=valeur) sans écraser les variables déjà définies."""
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, val = line.split("=", 1)
+        val = val.strip().strip('"').strip("'")
+        if val:
+            os.environ.setdefault(key.strip(), val)
 
 
 def load_models(path: Path) -> dict[str, ModelConfig]:
@@ -53,6 +68,7 @@ def main(argv=None):
     ap.add_argument("--limit", type=int, default=0, help="n'évaluer que les N premières questions (test)")
     ap.add_argument("--dry-run", action="store_true", help="estime le nombre d'appels et le coût, sans appeler")
     a = ap.parse_args(argv)
+    load_dotenv()
 
     cfgs = load_models(a.config)
     unknown = [m for m in a.models if m not in cfgs]

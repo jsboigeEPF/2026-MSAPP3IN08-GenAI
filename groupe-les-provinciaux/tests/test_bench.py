@@ -95,3 +95,17 @@ def test_synthetic_questions_well_formed():
         assert q["answer"] in "ABCD" and len(q["variants"]) == 3
     cats = {c: sum(q["category"] == c for q in qs) for c in ["order", "counting", "causality", "fleeting"]}
     assert set(cats.values()) == {20}
+
+
+def test_load_dotenv(tmp_path, monkeypatch):
+    from tvbench.run import load_dotenv
+    f = tmp_path / ".env"
+    f.write_text("# commentaire\nTVB_A=abc\nTVB_B=\nTVB_C=\"x y\"\nTVB_D=deja\n")
+    monkeypatch.delenv("TVB_A", raising=False)
+    monkeypatch.delenv("TVB_B", raising=False)
+    monkeypatch.delenv("TVB_C", raising=False)
+    monkeypatch.setenv("TVB_D", "env")
+    load_dotenv(f)
+    import os
+    assert os.environ["TVB_A"] == "abc" and "TVB_B" not in os.environ
+    assert os.environ["TVB_C"] == "x y" and os.environ["TVB_D"] == "env"
