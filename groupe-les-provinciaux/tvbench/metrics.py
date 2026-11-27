@@ -51,6 +51,8 @@ def summarize(df: pd.DataFrame) -> pd.DataFrame:
         else:
             r["consistency"] = r["robust_acc"] = float("nan")
         r["unparsed"] = g["pred"].isna().mean()
+        # biais de lettre : part de la lettre la plus prédite (0,25 = aucun biais avec 4 options)
+        r["top_letter_share"] = g["pred"].value_counts(normalize=True).max() if g["pred"].notna().any() else float("nan")
         r["errors"] = g["error"].notna().mean()
         r["cost_eur"] = g["cost_eur"].sum()
         r["eur_per_100q"] = 100 * g["cost_eur"].mean()
@@ -82,13 +84,15 @@ def main(argv=None):
     df = pd.concat([pd.read_json(p, lines=True) for p in a.results], ignore_index=True)
     s = summarize(df)
     main_cols = ["model", "strategy", "k", "n", "acc", "acc_ci"] + [f"acc_{c}" for c in CATS]
-    stab_cols = ["model", "strategy", "k", "consistency", "robust_acc", "unparsed", "errors", "fleeting_coverage"]
+    stab_cols = ["model", "strategy", "k", "consistency", "robust_acc", "unparsed", "errors", "top_letter_share",
+                 "fleeting_coverage"]
     cost_cols = ["model", "strategy", "k", "cost_eur", "eur_per_100q", "lat_p50_s", "lat_p95_s"]
     md = ["# Rapport — compréhension temporelle vidéo", "",
           f"Sources : {', '.join(map(str, a.results))}", "",
           "## Accuracy (par formulation, IC 95 % Wilson)", "", fmt(s[main_cols]), "",
           "## Stabilité aux reformulations", "",
           "`consistency` = même réponse sur toutes les formulations ; `robust_acc` = toutes correctes ; "
+          "`top_letter_share` = part de la lettre la plus souvent prédite (0,25 attendu sans biais) ; "
           "`fleeting_coverage` = part des questions « fugitives » où au moins une frame tombe dans la fenêtre de preuve.",
           "", fmt(s[stab_cols]), "", "## Coût et latence", "", fmt(s[cost_cols]), ""]
     a.out.parent.mkdir(parents=True, exist_ok=True)

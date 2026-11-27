@@ -29,4 +29,4 @@ models/
 data/frames/
 data/real/clips/
 data/synthetic/clips/
-results/*.jsonl
+results/essai.jsonl
