@@ -1,0 +1,30 @@
+{
+ "accuracy": [
+  "Corpus contrôlé : 0,54–0,64 en uniforme, 0,72–0,73 en adaptatif (hasard 0,25).",
+  "Le <b>comptage</b> reste proche du hasard (0,18–0,37) ; l'<b>ordre</b> est bien réussi (≈ 0,8).",
+  "Corpus réel : 0,83–0,92 — mais en partie devinable sans la vidéo (voir contrôle)."
+ ],
+ "adaptive": [
+  "Détail fugitif (contrôlé) : <b>0,57–0,73 → 1,00</b> pour les trois modèles.",
+  "Gain global +8 à +19 points sur le contrôlé, +1 à +7 sur le réel (événements moins brefs).",
+  "Coût identique : on choisit mieux les images, on n'en envoie pas plus."
+ ],
+ "perception": [
+  "Quand la preuve est dans les frames, les modèles répondent presque toujours juste :",
+  "les erreurs « fugitives » sont surtout des erreurs de <b>perception</b>, imposées par l'échantillonnage."
+ ],
+ "counting": [
+  "Clignotements de 0,35–0,6 s, frames espacées de 0,625 s : une partie des événements n'est jamais vue.",
+  "32 frames au lieu de 16 : comptage <b>0,18–0,37 → 0,35–0,48</b>, moins de sous-comptage — mais plus de la moitié des comptes restent faux."
+ ],
+ "blind": [
+  "Sans image : <b>0,29–0,30</b> sur le contrôlé (≈ hasard) mais <b>0,48–0,60</b> sur le réel.",
+  "28 questions réelles sur 80 réussies à l'aveugle par les deux modèles : distracteurs trop peu plausibles.",
+  "Leçon : un benchmark vidéo doit toujours inclure une baseline <b>sans image</b>."
+ ],
+ "stability": [
+  "Contrôlé : même réponse sur les 3 formulations pour 51–70 % des questions seulement.",
+  "Exiger 3 formulations justes fait perdre 10 à 13 points (robust_acc 0,41–0,53).",
+  "Biais de lettre : Qwen 3.5-9B répond « D » dans plus de la moitié des questions de comptage."
+ ]
+}

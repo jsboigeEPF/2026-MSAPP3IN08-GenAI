@@ -1,0 +1,7 @@
+numpy>=2.0
+pandas>=2.2
+pillow>=10.0
+requests>=2.31
+pytest>=8.0
+# optionnel, pour le modèle local qwen_local (GPU recommandé) :
+# torch>=2.4 transformers>=4.49 accelerate>=1.0
